@@ -1,0 +1,13 @@
+2016/05/27 14:01:03 [emerg] 14140#9344: bind() to 0.0.0.0:80 failed (10013: An attempt was made to access a socket in a way forbidden by its access permissions)
+2016/05/27 14:42:17 [emerg] 5124#8244: invalid URL prefix in D:\KnowledgeCenter\Test\WebSocketLoadbalancing\nginx-1.11.0\nginx-1.11.0/conf/nginx.conf:86
+2016/05/27 14:44:03 [emerg] 4436#11220: invalid URL prefix in D:\KnowledgeCenter\Test\WebSocketLoadbalancing\nginx-1.11.0\nginx-1.11.0/conf/nginx.conf:86
+2016/05/27 14:46:47 [emerg] 13272#12232: invalid URL prefix in D:\KnowledgeCenter\Test\WebSocketLoadbalancing\nginx-1.11.0\nginx-1.11.0/conf/nginx.conf:85
+2016/05/27 14:47:04 [emerg] 6336#11956: invalid URL prefix in D:\KnowledgeCenter\Test\WebSocketLoadbalancing\nginx-1.11.0\nginx-1.11.0/conf/nginx.conf:85
+2016/05/27 14:47:29 [emerg] 5340#8932: invalid URL prefix in D:\KnowledgeCenter\Test\WebSocketLoadbalancing\nginx-1.11.0\nginx-1.11.0/conf/nginx.conf:85
+2016/05/27 14:49:12 [emerg] 10164#13272: invalid URL prefix in D:\KnowledgeCenter\Test\WebSocketLoadbalancing\nginx-1.11.0\nginx-1.11.0/conf/nginx.conf:85
+2016/05/27 14:49:58 [emerg] 6080#1380: invalid URL prefix in D:\KnowledgeCenter\Test\WebSocketLoadbalancing\nginx-1.11.0\nginx-1.11.0/conf/nginx.conf:85
+2016/05/27 15:04:42 [emerg] 3868#7628: invalid URL prefix in D:\KnowledgeCenter\Test\WebSocketLoadbalancing\nginx-1.11.0\nginx-1.11.0/conf/nginx.conf:85
+2016/05/27 15:04:42 [alert] 14148#11764: worker process 3868 exited with code 1
+2016/05/27 15:04:42 [alert] 14148#11764: could not respawn worker
+2016/05/27 15:05:26 [emerg] 13352#15148: invalid URL prefix in D:\KnowledgeCenter\Test\WebSocketLoadbalancing\nginx-1.11.0\nginx-1.11.0/conf/nginx.conf:85
+2016/05/27 15:22:58 [error] 9024#8104: *7 WSARecv() failed (10054: An existing connection was forcibly closed by the remote host) while proxying upgraded connection, client: 127.0.0.1, server: localhost, request: "GET /helloworld/2016/ HTTP/1.1", upstream: "http://127.0.0.1:2016/helloworld/2016/", host: "localhost:8088"

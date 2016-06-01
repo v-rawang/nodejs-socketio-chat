@@ -1,0 +1,1 @@
+D:\KnowledgeCenter\SourceCode\nodejs-socketio-chat\bin\Microsoft.NodejsTools.WebRole.dll
