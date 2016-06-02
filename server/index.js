@@ -1,15 +1,28 @@
 var app = require('express')();
 var http = require('http').Server(app);
 var io = require('socket.io')(http);
+var _redis = require("redis");
+var redisClient = null; //_redis.createClient(6379, "118.194.132.112");
+//redisClient.auth("begin@2015");
+//redisClient.select(1);
+var os = require('os');
 
 app.get('/', function(req, res){
-	res.send('<h1>Welcome Realtime Server</h1>');
+	res.send('<h1>Welcome to Realtime Server-:)</h1>');
 });
 
 //在线用户
 var onlineUsers = {};
 //当前在线人数
 var onlineCount = 0;
+
+function getRedisClient() 
+{
+	var client = _redis.createClient(6379, "118.194.132.112");
+	client.auth("begin@2015");
+
+	return client;
+}
 
 io.on('connection', function(socket){
 	console.log('a user connected');
@@ -28,7 +41,34 @@ io.on('connection', function(socket){
 		
 		//向所有客户端广播用户加入
 		io.emit('login', {onlineUsers:onlineUsers, onlineCount:onlineCount, user:obj});
-		console.log(obj.username+'加入了聊天室');
+		//console.log(obj.username+'加入了聊天室');
+		console.log(obj.username + ' joins the chat.');
+		
+		//redisClient = _redis.createClient(6379, "118.194.132.112");
+		//redisClient.auth("begin@2015");
+		
+		redisClient = getRedisClient();
+
+		redisClient.select(1, function (error) 
+	    {
+			if (error) {
+				console.log(error);
+			} else {
+				// set
+				redisClient.set(obj.username, os.hostname(), function (error, res) {
+					if (error) {
+						console.log(error);
+					} else {
+						console.log(res);
+					}
+					
+					// 关闭链接
+					redisClient.end(true);
+				});
+			}
+		});
+
+		//redisClient.set(obj.username, os.hostname());
 	});
 	
 	//监听用户退出
@@ -45,7 +85,32 @@ io.on('connection', function(socket){
 			
 			//向所有客户端广播用户退出
 			io.emit('logout', {onlineUsers:onlineUsers, onlineCount:onlineCount, user:obj});
-			console.log(obj.username+'退出了聊天室');
+			//console.log(obj.username+'退出了聊天室');
+			//redisClient.del(obj.username);
+			//redisClient.end();
+			//redisClient = _redis.createClient(6379, "118.194.132.112");
+			//redisClient.auth("begin@2015");
+			
+			redisClient = getRedisClient();
+
+			redisClient.select(1, function (error) {
+				if (error) {
+					console.log(error);
+				} else {
+					// set
+					redisClient.del(obj.username, function (error, res) {
+						if (error) {
+							console.log(error);
+						} else {
+							console.log(res);
+						}
+						
+						// 关闭链接
+						redisClient.end(true);
+					});
+				}
+			});
+			console.log(obj.username + ' leaves the chat.');
 		}
 	});
 	
@@ -53,7 +118,8 @@ io.on('connection', function(socket){
 	socket.on('message', function(obj){
 		//向所有客户端广播发布的消息
 		io.emit('message', obj);
-		console.log(obj.username+'说：'+obj.content);
+		//console.log(obj.username+'说：'+obj.content);
+		console.log(obj.username + ' says: ' + obj.content);
 	});
   
 });
