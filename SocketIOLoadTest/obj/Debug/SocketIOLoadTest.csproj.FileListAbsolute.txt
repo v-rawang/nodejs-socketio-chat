@@ -1,0 +1,10 @@
+D:\KnowledgeCenter\SourceCode\nodejs-socketio-chat\SocketIOLoadTest\bin\Debug\WebTest1.webtest
+D:\KnowledgeCenter\SourceCode\nodejs-socketio-chat\SocketIOLoadTest\bin\Debug\SocketIOLoadTest.dll
+D:\KnowledgeCenter\SourceCode\nodejs-socketio-chat\SocketIOLoadTest\bin\Debug\SocketIOLoadTest.pdb
+D:\KnowledgeCenter\SourceCode\nodejs-socketio-chat\SocketIOLoadTest\bin\Debug\Microsoft.VisualStudio.QualityTools.WebTestFramework.dll
+D:\KnowledgeCenter\SourceCode\nodejs-socketio-chat\SocketIOLoadTest\bin\Debug\Microsoft.VisualStudio.QualityTools.WebTestFramework.xml
+D:\KnowledgeCenter\SourceCode\nodejs-socketio-chat\SocketIOLoadTest\obj\Debug\SocketIOLoadTest.dll
+D:\KnowledgeCenter\SourceCode\nodejs-socketio-chat\SocketIOLoadTest\obj\Debug\SocketIOLoadTest.pdb
+D:\KnowledgeCenter\SourceCode\nodejs-socketio-chat\SocketIOLoadTest\obj\Debug\SocketIOLoadTest.csprojResolveAssemblyReference.cache
+D:\KnowledgeCenter\SourceCode\nodejs-socketio-chat\SocketIOLoadTest\bin\Debug\LoadTest1.loadtest
+D:\KnowledgeCenter\SourceCode\nodejs-socketio-chat\SocketIOLoadTest\bin\Debug\LoadTest2.loadtest
