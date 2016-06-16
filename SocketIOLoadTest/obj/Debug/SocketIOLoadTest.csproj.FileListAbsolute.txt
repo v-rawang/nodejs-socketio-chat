@@ -12,3 +12,4 @@ D:\KnowledgeCenter\SourceCode\nodejs-socketio-chat\SocketIOLoadTest\bin\Debug\Lo
 D:\KnowledgeCenter\SourceCode\nodejs-socketio-chat\SocketIOLoadTest\bin\Debug\LoadTest4.loadtest
 D:\KnowledgeCenter\SourceCode\nodejs-socketio-chat\SocketIOLoadTest\bin\Debug\LoadTest5.loadtest
 D:\KnowledgeCenter\SourceCode\nodejs-socketio-chat\SocketIOLoadTest\bin\Debug\LoadTest6.loadtest
+D:\KnowledgeCenter\SourceCode\nodejs-socketio-chat\SocketIOLoadTest\bin\Debug\LoadTest7.loadtest
