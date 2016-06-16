@@ -1,0 +1,635 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="878f921c-ebe8-4c47-b298-ce437b179d90" name="Administrator@MININT-3MVF30N 2016-06-16 16:53:10" runUser="MININT-3MVF30N\Administrator" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="ce1befce-c7ce-4f95-bdc9-d76a680a87f9">
+    <Description>These are default test settings for a local test run.</Description>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+    <Deployment runDeploymentRoot="Administrator_MININT-3MVF30N 2016-06-16 16_53_10" />
+    <Properties>
+      <Property name="TestSettingsUIType" value="UnitTest" />
+    </Properties>
+  </TestSettings>
+  <Times creation="2016-06-16T16:53:10.8891449+08:00" queuing="2016-06-16T16:53:13.8138559+08:00" start="2016-06-16T16:53:14.2044820+08:00" finish="2016-06-16T16:58:32.1706714+08:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="1" executed="1" passed="0" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="1" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <LoadTest Name="LoadTest4" Description="" Owner="" storage="d:\knowledgecenter\sourcecode\nodejs-socketio-chat\socketioloadtest\loadtest4.loadtest" Priority="2147483647" Enabled="true" CssProjectStructure="" CssIteration="" DeploymentItemsEditable="" WorkItemIds="" TraceLevel="None" CurrentRunConfig="Run Settings1" Id="0c399840-4b6d-4b10-a568-4cce3c3803d0">
+      <Scenarios>
+        <Scenario Name="Scenario1" DelayBetweenIterations="0" PercentNewUsers="0" IPSwitching="false" TestMixType="PercentageOfTestsStarted" ApplyDistributionToPacingDelay="true" MaxTestIterations="0" DisableDuringWarmup="false" DelayStartTime="0" AllowedAgents="">
+          <ThinkProfile Value="0" Pattern="Off" />
+          <LoadProfile Pattern="Constant" InitialUsers="25" />
+          <TestMix>
+            <TestProfile Name="WebTest2" Path="d:\knowledgecenter\sourcecode\nodejs-socketio-chat\socketioloadtest\webtest2.webtest" Id="793d01bc-e1c4-4689-9dfe-e45013383a63" Percentage="100" Type="Microsoft.VisualStudio.TestTools.WebStress.DeclarativeWebTestElement, Microsoft.VisualStudio.QualityTools.LoadTest, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+          </TestMix>
+          <BrowserMix>
+            <BrowserProfile Percentage="100">
+              <Browser Name="Internet Explorer 11.0" MaxConnections="6">
+                <Headers>
+                  <Header Name="User-Agent" Value="Mozilla/5.0 (Windows NT 6.3; Trident/7.0; rv:11.0) like Gecko" />
+                  <Header Name="Accept" Value="*/*" />
+                  <Header Name="Accept-Language" Value="{{$IEAcceptLanguage}}" />
+                  <Header Name="Accept-Encoding" Value="GZIP" />
+                </Headers>
+              </Browser>
+            </BrowserProfile>
+          </BrowserMix>
+          <NetworkMix>
+            <NetworkProfile Percentage="100">
+              <Network Name="LAN" BandwidthInKbps="1000000" NetworkProfileConfigurationXml="&lt;Emulation&gt;&lt;VirtualChannel name=&quot;defaultChannel&quot;&gt;&lt;FilterList/&gt;&lt;VirtualLink instances=&quot;1&quot; name=&quot;defaultLink&quot;&gt;&lt;LinkRule dir=&quot;upstream&quot;&gt;&lt;Bandwidth&gt;&lt;Speed unit=&quot;kbps&quot;&gt;1000000&lt;/Speed&gt;&lt;/Bandwidth&gt;&lt;/LinkRule&gt;&lt;LinkRule dir=&quot;downstream&quot;&gt;&lt;Bandwidth&gt;&lt;Speed unit=&quot;kbps&quot;&gt;1000000&lt;/Speed&gt;&lt;/Bandwidth&gt;&lt;/LinkRule&gt;&lt;/VirtualLink&gt;&lt;/VirtualChannel&gt;&lt;/Emulation&gt;" />
+            </NetworkProfile>
+          </NetworkMix>
+        </Scenario>
+      </Scenarios>
+      <CounterSets>
+        <CounterSet Name="MININT-3MVF30N" CounterSetType="LoadTest" LocId="">
+          <CounterCategories>
+            <CounterCategory Name="LoadTest:Scenario">
+              <Counters>
+                <Counter Name="User Load" HigherIsBetter="true" />
+                <Counter Name="Tests Running" HigherIsBetter="true" />
+              </Counters>
+            </CounterCategory>
+            <CounterCategory Name="LoadTest:Test">
+              <Counters>
+                <Counter Name="Total Tests" HigherIsBetter="true" />
+                <Counter Name="Passed Tests" HigherIsBetter="true" />
+                <Counter Name="Failed Tests" />
+                <Counter Name="Tests/Sec" HigherIsBetter="true" />
+                <Counter Name="Passed Tests/Sec" HigherIsBetter="true" />
+                <Counter Name="Failed Tests/Sec" />
+                <Counter Name="Avg. Requests/Test" HigherIsBetter="true" />
+                <Counter Name="Avg. Test Time" />
+                <Counter Name="% Time in LoadTestPlugin" />
+                <Counter Name="% Time in WebTest code" />
+                <Counter Name="% Time in Rules" />
+              </Counters>
+            </CounterCategory>
+            <CounterCategory Name="LoadTest:Transaction">
+              <Counters>
+                <Counter Name="Total Transactions" HigherIsBetter="true" />
+                <Counter Name="Avg. Transaction Time" />
+                <Counter Name="Avg. Response Time" />
+                <Counter Name="Transactions/Sec" HigherIsBetter="true" />
+              </Counters>
+            </CounterCategory>
+            <CounterCategory Name="LoadTest:Errors">
+              <Counters>
+                <Counter Name="Http Errors" />
+                <Counter Name="Validation Rule Errors" />
+                <Counter Name="Extraction Rule Errors" />
+                <Counter Name="Requests Timed Out" />
+                <Counter Name="Exceptions" />
+                <Counter Name="Total Errors" />
+                <Counter Name="Errors/Sec" />
+                <Counter Name="Threshold Violations/Sec" />
+              </Counters>
+            </CounterCategory>
+            <CounterCategory Name="LoadTest:Page">
+              <Counters>
+                <Counter Name="Total Pages" HigherIsBetter="true" />
+                <Counter Name="Avg. Page Time" />
+                <Counter Name="Page Response Time Goal" HigherIsBetter="true" />
+                <Counter Name="% Pages Meeting Goal" HigherIsBetter="true" />
+                <Counter Name="Pages/Sec" HigherIsBetter="true" />
+              </Counters>
+            </CounterCategory>
+            <CounterCategory Name="LoadTest:Request">
+              <Counters>
+                <Counter Name="Total Requests" HigherIsBetter="true" />
+                <Counter Name="Passed Requests" HigherIsBetter="true" />
+                <Counter Name="Failed Requests" />
+                <Counter Name="Cached Requests" HigherIsBetter="true" />
+                <Counter Name="Requests/Sec" HigherIsBetter="true" />
+                <Counter Name="Passed Requests/Sec" HigherIsBetter="true" />
+                <Counter Name="Failed Requests/Sec" />
+                <Counter Name="Avg. First Byte Time" />
+                <Counter Name="Avg. Response Time" />
+                <Counter Name="Avg. Connection Wait Time">
+                  <ThresholdRules>
+                    <ThresholdRule Classname="Microsoft.VisualStudio.TestTools.WebStress.Rules.ThresholdRuleCompareCounters, Microsoft.VisualStudio.QualityTools.LoadTest, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+                      <RuleParameters>
+                        <RuleParameter Name="DependentCategory" Value="LoadTest:Page" />
+                        <RuleParameter Name="DependentCounter" Value="Avg. Page Time" />
+                        <RuleParameter Name="DependentInstance" Value="_Total" />
+                        <RuleParameter Name="AlertIfOver" Value="True" />
+                        <RuleParameter Name="WarningThreshold" Value="0.25" />
+                        <RuleParameter Name="CriticalThreshold" Value="0.5" />
+                      </RuleParameters>
+                    </ThresholdRule>
+                  </ThresholdRules>
+                </Counter>
+                <Counter Name="Avg. Content Length" />
+              </Counters>
+            </CounterCategory>
+            <CounterCategory Name="LoadTest:LogEntries">
+              <Counters>
+                <Counter Name="Total Log Entries" />
+                <Counter Name="Log Entries/Sec" />
+              </Counters>
+            </CounterCategory>
+          </CounterCategories>
+        </CounterSet>
+        <CounterSet Name="Controller" CounterSetType="Controller" LocId="CounterSet_Controller">
+          <CounterCategories>
+            <CounterCategory Name="Memory">
+              <Counters>
+                <Counter Name="% Committed Bytes In Use" Range="100" />
+                <Counter Name="Available MBytes" RangeGroup="Memory Bytes" HigherIsBetter="true">
+                  <ThresholdRules>
+                    <ThresholdRule Classname="Microsoft.VisualStudio.TestTools.WebStress.Rules.ThresholdRuleCompareConstant, Microsoft.VisualStudio.QualityTools.LoadTest">
+                      <RuleParameters>
+                        <RuleParameter Name="AlertIfOver" Value="False" />
+                        <RuleParameter Name="WarningThreshold" Value="100" />
+                        <RuleParameter Name="CriticalThreshold" Value="50" />
+                      </RuleParameters>
+                    </ThresholdRule>
+                    <ThresholdRule Classname="Microsoft.VisualStudio.TestTools.WebStress.Rules.ThresholdRuleCompareConstant, Microsoft.VisualStudio.QualityTools.LoadTest">
+                      <RuleParameters>
+                        <RuleParameter Name="AlertIfOver" Value="False" />
+                        <RuleParameter Name="WarningThreshold" Value="100" />
+                        <RuleParameter Name="CriticalThreshold" Value="50" />
+                      </RuleParameters>
+                    </ThresholdRule>
+                  </ThresholdRules>
+                </Counter>
+                <Counter Name="Page Faults/sec" />
+                <Counter Name="Pages/sec" />
+                <Counter Name="Pool Paged Bytes" RangeGroup="Memory Bytes" />
+                <Counter Name="Pool Nonpaged bytes" RangeGroup="Memory Bytes" />
+              </Counters>
+            </CounterCategory>
+            <CounterCategory Name="Network Interface">
+              <Counters>
+                <Counter Name="Bytes Received/sec" RangeGroup="Network Bytes" />
+                <Counter Name="Bytes Sent/sec" RangeGroup="Network Bytes" />
+                <Counter Name="Output Queue Length">
+                  <ThresholdRules>
+                    <ThresholdRule Classname="Microsoft.VisualStudio.TestTools.WebStress.Rules.ThresholdRuleCompareConstant, Microsoft.VisualStudio.QualityTools.LoadTest">
+                      <RuleParameters>
+                        <RuleParameter Name="AlertIfOver" Value="True" />
+                        <RuleParameter Name="WarningThreshold" Value="1.5" />
+                        <RuleParameter Name="CriticalThreshold" Value="2" />
+                      </RuleParameters>
+                    </ThresholdRule>
+                    <ThresholdRule Classname="Microsoft.VisualStudio.TestTools.WebStress.Rules.ThresholdRuleCompareConstant, Microsoft.VisualStudio.QualityTools.LoadTest">
+                      <RuleParameters>
+                        <RuleParameter Name="AlertIfOver" Value="True" />
+                        <RuleParameter Name="WarningThreshold" Value="1.5" />
+                        <RuleParameter Name="CriticalThreshold" Value="2" />
+                      </RuleParameters>
+                    </ThresholdRule>
+                  </ThresholdRules>
+                </Counter>
+                <Counter Name="Packets Received/sec" RangeGroup="Network Packets" />
+                <Counter Name="Packets Sent/sec" RangeGroup="Network Packets" />
+                <Counter Name="Current Bandwidth" RangeGroup="Network Bytes" />
+                <Counter Name="Bytes Total/sec" RangeGroup="Network Bytes">
+                  <ThresholdRules>
+                    <ThresholdRule Classname="Microsoft.VisualStudio.TestTools.WebStress.Rules.ThresholdRuleCompareCounters, Microsoft.VisualStudio.QualityTools.LoadTest, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+                      <RuleParameters>
+                        <RuleParameter Name="DependentCategory" Value="Network Interface" />
+                        <RuleParameter Name="DependentCounter" Value="Current Bandwidth" />
+                        <RuleParameter Name="DependentInstance" Value="" />
+                        <RuleParameter Name="AlertIfOver" Value="True" />
+                        <RuleParameter Name="WarningThreshold" Value="0.6" />
+                        <RuleParameter Name="CriticalThreshold" Value="0.7" />
+                      </RuleParameters>
+                    </ThresholdRule>
+                    <ThresholdRule Classname="Microsoft.VisualStudio.TestTools.WebStress.Rules.ThresholdRuleCompareCounters, Microsoft.VisualStudio.QualityTools.LoadTest, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+                      <RuleParameters>
+                        <RuleParameter Name="DependentCategory" Value="Network Interface" />
+                        <RuleParameter Name="DependentCounter" Value="Current Bandwidth" />
+                        <RuleParameter Name="DependentInstance" Value="" />
+                        <RuleParameter Name="AlertIfOver" Value="True" />
+                        <RuleParameter Name="WarningThreshold" Value="0.6" />
+                        <RuleParameter Name="CriticalThreshold" Value="0.7" />
+                      </RuleParameters>
+                    </ThresholdRule>
+                  </ThresholdRules>
+                </Counter>
+              </Counters>
+              <Instances>
+                <Instance Name="*" />
+              </Instances>
+            </CounterCategory>
+            <CounterCategory Name="PhysicalDisk">
+              <Counters>
+                <Counter Name="% Disk Read Time" Range="100" />
+                <Counter Name="% Disk Time" Range="100" />
+                <Counter Name="% Disk Write Time" Range="100" />
+                <Counter Name="% Idle Time" Range="100" HigherIsBetter="true">
+                  <ThresholdRules>
+                    <ThresholdRule Classname="Microsoft.VisualStudio.TestTools.WebStress.Rules.ThresholdRuleCompareConstant, Microsoft.VisualStudio.QualityTools.LoadTest">
+                      <RuleParameters>
+                        <RuleParameter Name="AlertIfOver" Value="False" />
+                        <RuleParameter Name="WarningThreshold" Value="40" />
+                        <RuleParameter Name="CriticalThreshold" Value="20" />
+                      </RuleParameters>
+                    </ThresholdRule>
+                    <ThresholdRule Classname="Microsoft.VisualStudio.TestTools.WebStress.Rules.ThresholdRuleCompareConstant, Microsoft.VisualStudio.QualityTools.LoadTest">
+                      <RuleParameters>
+                        <RuleParameter Name="AlertIfOver" Value="False" />
+                        <RuleParameter Name="WarningThreshold" Value="40" />
+                        <RuleParameter Name="CriticalThreshold" Value="20" />
+                      </RuleParameters>
+                    </ThresholdRule>
+                  </ThresholdRules>
+                </Counter>
+                <Counter Name="Avg. Disk Bytes/Read" RangeGroup="DiskBytesRate" />
+                <Counter Name="Avg. Disk Bytes/Transfer" RangeGroup="DiskBytesRate" />
+                <Counter Name="Avg. Disk Bytes/Write" RangeGroup="DiskBytesRate" />
+                <Counter Name="Avg. Disk Queue Length" RangeGroup="Disk Queue Length" />
+                <Counter Name="Avg. Disk Read Queue Length" RangeGroup="Disk Queue Length" />
+                <Counter Name="Avg. Disk Write Queue Length" RangeGroup="Disk Queue Length" />
+                <Counter Name="Current Disk Queue Length" RangeGroup="Disk Queue Length" />
+                <Counter Name="Avg. Disk sec/Read" RangeGroup="Disk sec" />
+                <Counter Name="Avg. Disk sec/Transfer" RangeGroup="Disk sec" />
+                <Counter Name="Avg. Disk sec/Write" RangeGroup="Disk sec" />
+                <Counter Name="Disk Bytes/sec" RangeGroup="Disk Bytes sec" />
+                <Counter Name="Disk Read Bytes/sec" RangeGroup="Disk Bytes sec" />
+                <Counter Name="Disk Reads/sec" RangeGroup="Disk Transfers sec" />
+                <Counter Name="Disk Transfers/sec" RangeGroup="Disk Transfers sec" />
+                <Counter Name="Disk Write Bytes/sec" RangeGroup="Disk Bytes sec" />
+                <Counter Name="Disk Writes/sec" RangeGroup="Disk Transfers sec" />
+                <Counter Name="Split IO/Sec" RangeGroup="Disk Transfers sec" />
+              </Counters>
+              <Instances>
+                <Instance Name="*" />
+              </Instances>
+            </CounterCategory>
+            <CounterCategory Name="Processor">
+              <Counters>
+                <Counter Name="% Processor Time" Range="100">
+                  <ThresholdRules>
+                    <ThresholdRule Classname="Microsoft.VisualStudio.TestTools.WebStress.Rules.ThresholdRuleCompareConstant, Microsoft.VisualStudio.QualityTools.LoadTest">
+                      <RuleParameters>
+                        <RuleParameter Name="AlertIfOver" Value="True" />
+                        <RuleParameter Name="WarningThreshold" Value="75" />
+                        <RuleParameter Name="CriticalThreshold" Value="90" />
+                      </RuleParameters>
+                    </ThresholdRule>
+                    <ThresholdRule Classname="Microsoft.VisualStudio.TestTools.WebStress.Rules.ThresholdRuleCompareConstant, Microsoft.VisualStudio.QualityTools.LoadTest">
+                      <RuleParameters>
+                        <RuleParameter Name="AlertIfOver" Value="True" />
+                        <RuleParameter Name="WarningThreshold" Value="75" />
+                        <RuleParameter Name="CriticalThreshold" Value="90" />
+                      </RuleParameters>
+                    </ThresholdRule>
+                  </ThresholdRules>
+                </Counter>
+                <Counter Name="% Privileged Time" Range="100" />
+                <Counter Name="% User Time" Range="100" />
+              </Counters>
+              <Instances>
+                <Instance Name="_Total" />
+              </Instances>
+            </CounterCategory>
+            <CounterCategory Name="System">
+              <Counters>
+                <Counter Name="Context Switches/sec" />
+                <Counter Name="Processes" />
+                <Counter Name="Processor Queue Length" />
+                <Counter Name="Threads" />
+              </Counters>
+            </CounterCategory>
+            <CounterCategory Name="Process">
+              <Counters>
+                <Counter Name="% Processor Time" RangeGroup="Processor Time" />
+                <Counter Name="% Privileged Time" RangeGroup="Processor Time" />
+                <Counter Name="% User Time" RangeGroup="Processor Time" />
+                <Counter Name="Handle Count" />
+                <Counter Name="Thread Count" />
+                <Counter Name="Private Bytes" RangeGroup="Memory Bytes" />
+                <Counter Name="Virtual Bytes" RangeGroup="Memory Bytes" />
+                <Counter Name="Working Set" RangeGroup="Memory Bytes" />
+              </Counters>
+              <Instances>
+                <Instance Name="QTController" />
+                <Instance Name="QTController64" />
+              </Instances>
+            </CounterCategory>
+          </CounterCategories>
+          <DefaultCountersForAutomaticGraphs>
+            <DefaultCounter CategoryName="Processor" CounterName="% Processor Time" InstanceName="_Total" GraphName="" />
+            <DefaultCounter CategoryName="Memory" CounterName="Available MBytes" InstanceName="" GraphName="" />
+          </DefaultCountersForAutomaticGraphs>
+        </CounterSet>
+        <CounterSet Name="Agent" CounterSetType="Agent" LocId="CounterSet_Agent">
+          <CounterCategories>
+            <CounterCategory Name="Memory">
+              <Counters>
+                <Counter Name="% Committed Bytes In Use" Range="100" />
+                <Counter Name="Available MBytes" RangeGroup="Memory Bytes" HigherIsBetter="true">
+                  <ThresholdRules>
+                    <ThresholdRule Classname="Microsoft.VisualStudio.TestTools.WebStress.Rules.ThresholdRuleCompareConstant, Microsoft.VisualStudio.QualityTools.LoadTest">
+                      <RuleParameters>
+                        <RuleParameter Name="AlertIfOver" Value="False" />
+                        <RuleParameter Name="WarningThreshold" Value="100" />
+                        <RuleParameter Name="CriticalThreshold" Value="50" />
+                      </RuleParameters>
+                    </ThresholdRule>
+                  </ThresholdRules>
+                </Counter>
+                <Counter Name="Page Faults/sec" />
+                <Counter Name="Pages/sec" />
+                <Counter Name="Pool Paged Bytes" RangeGroup="Memory Bytes" />
+                <Counter Name="Pool Nonpaged bytes" RangeGroup="Memory Bytes" />
+              </Counters>
+            </CounterCategory>
+            <CounterCategory Name="Network Interface">
+              <Counters>
+                <Counter Name="Bytes Received/sec" RangeGroup="Network Bytes" />
+                <Counter Name="Bytes Sent/sec" RangeGroup="Network Bytes" />
+                <Counter Name="Output Queue Length">
+                  <ThresholdRules>
+                    <ThresholdRule Classname="Microsoft.VisualStudio.TestTools.WebStress.Rules.ThresholdRuleCompareConstant, Microsoft.VisualStudio.QualityTools.LoadTest">
+                      <RuleParameters>
+                        <RuleParameter Name="AlertIfOver" Value="True" />
+                        <RuleParameter Name="WarningThreshold" Value="1.5" />
+                        <RuleParameter Name="CriticalThreshold" Value="2" />
+                      </RuleParameters>
+                    </ThresholdRule>
+                  </ThresholdRules>
+                </Counter>
+                <Counter Name="Packets Received/sec" RangeGroup="Network Packets" />
+                <Counter Name="Packets Sent/sec" RangeGroup="Network Packets" />
+                <Counter Name="Current Bandwidth" RangeGroup="Network Bytes" />
+                <Counter Name="Bytes Total/sec" RangeGroup="Network Bytes">
+                  <ThresholdRules>
+                    <ThresholdRule Classname="Microsoft.VisualStudio.TestTools.WebStress.Rules.ThresholdRuleCompareCounters, Microsoft.VisualStudio.QualityTools.LoadTest, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+                      <RuleParameters>
+                        <RuleParameter Name="DependentCategory" Value="Network Interface" />
+                        <RuleParameter Name="DependentCounter" Value="Current Bandwidth" />
+                        <RuleParameter Name="DependentInstance" Value="" />
+                        <RuleParameter Name="AlertIfOver" Value="True" />
+                        <RuleParameter Name="WarningThreshold" Value="0.6" />
+                        <RuleParameter Name="CriticalThreshold" Value="0.7" />
+                      </RuleParameters>
+                    </ThresholdRule>
+                  </ThresholdRules>
+                </Counter>
+              </Counters>
+              <Instances>
+                <Instance Name="*" />
+              </Instances>
+            </CounterCategory>
+            <CounterCategory Name="PhysicalDisk">
+              <Counters>
+                <Counter Name="% Disk Read Time" Range="100" />
+                <Counter Name="% Disk Time" Range="100" />
+                <Counter Name="% Disk Write Time" Range="100" />
+                <Counter Name="% Idle Time" Range="100" HigherIsBetter="true">
+                  <ThresholdRules>
+                    <ThresholdRule Classname="Microsoft.VisualStudio.TestTools.WebStress.Rules.ThresholdRuleCompareConstant, Microsoft.VisualStudio.QualityTools.LoadTest">
+                      <RuleParameters>
+                        <RuleParameter Name="AlertIfOver" Value="False" />
+                        <RuleParameter Name="WarningThreshold" Value="40" />
+                        <RuleParameter Name="CriticalThreshold" Value="20" />
+                      </RuleParameters>
+                    </ThresholdRule>
+                  </ThresholdRules>
+                </Counter>
+                <Counter Name="Avg. Disk Bytes/Read" RangeGroup="DiskBytesRate" />
+                <Counter Name="Avg. Disk Bytes/Transfer" RangeGroup="DiskBytesRate" />
+                <Counter Name="Avg. Disk Bytes/Write" RangeGroup="DiskBytesRate" />
+                <Counter Name="Avg. Disk Queue Length" RangeGroup="Disk Queue Length" />
+                <Counter Name="Avg. Disk Read Queue Length" RangeGroup="Disk Queue Length" />
+                <Counter Name="Avg. Disk Write Queue Length" RangeGroup="Disk Queue Length" />
+                <Counter Name="Current Disk Queue Length" RangeGroup="Disk Queue Length" />
+                <Counter Name="Avg. Disk sec/Read" RangeGroup="Disk sec" />
+                <Counter Name="Avg. Disk sec/Transfer" RangeGroup="Disk sec" />
+                <Counter Name="Avg. Disk sec/Write" RangeGroup="Disk sec" />
+                <Counter Name="Disk Bytes/sec" RangeGroup="Disk Bytes sec" />
+                <Counter Name="Disk Read Bytes/sec" RangeGroup="Disk Bytes sec" />
+                <Counter Name="Disk Reads/sec" RangeGroup="Disk Transfers sec" />
+                <Counter Name="Disk Transfers/sec" RangeGroup="Disk Transfers sec" />
+                <Counter Name="Disk Write Bytes/sec" RangeGroup="Disk Bytes sec" />
+                <Counter Name="Disk Writes/sec" RangeGroup="Disk Transfers sec" />
+                <Counter Name="Split IO/Sec" RangeGroup="Disk Transfers sec" />
+              </Counters>
+              <Instances>
+                <Instance Name="*" />
+              </Instances>
+            </CounterCategory>
+            <CounterCategory Name="Processor">
+              <Counters>
+                <Counter Name="% Processor Time" Range="100">
+                  <ThresholdRules>
+                    <ThresholdRule Classname="Microsoft.VisualStudio.TestTools.WebStress.Rules.ThresholdRuleCompareConstant, Microsoft.VisualStudio.QualityTools.LoadTest">
+                      <RuleParameters>
+                        <RuleParameter Name="AlertIfOver" Value="True" />
+                        <RuleParameter Name="WarningThreshold" Value="75" />
+                        <RuleParameter Name="CriticalThreshold" Value="90" />
+                      </RuleParameters>
+                    </ThresholdRule>
+                  </ThresholdRules>
+                </Counter>
+                <Counter Name="% Privileged Time" Range="100" />
+                <Counter Name="% User Time" Range="100" />
+              </Counters>
+              <Instances>
+                <Instance Name="0" />
+                <Instance Name="_Total" />
+              </Instances>
+            </CounterCategory>
+            <CounterCategory Name="System">
+              <Counters>
+                <Counter Name="Context Switches/sec" />
+                <Counter Name="Processes" />
+                <Counter Name="Processor Queue Length" />
+                <Counter Name="Threads" />
+              </Counters>
+            </CounterCategory>
+            <CounterCategory Name="Process">
+              <Counters>
+                <Counter Name="% Processor Time" RangeGroup="Processor Time" />
+                <Counter Name="% Privileged Time" RangeGroup="Processor Time" />
+                <Counter Name="% User Time" RangeGroup="Processor Time" />
+                <Counter Name="Handle Count" />
+                <Counter Name="Thread Count" />
+                <Counter Name="Private Bytes" RangeGroup="Memory Bytes" />
+                <Counter Name="Virtual Bytes" RangeGroup="Memory Bytes" />
+                <Counter Name="Working Set" RangeGroup="Memory Bytes" />
+              </Counters>
+              <Instances>
+                <Instance Name="devenv" />
+                <Instance Name="QTAgentService" />
+                <Instance Name="QTAgent" />
+                <Instance Name="QTAgent32" />
+                <Instance Name="QTDCAgent" />
+                <Instance Name="QTDCAgent32" />
+                <Instance Name="QTAgent_35" />
+                <Instance Name="QTAgent_40" />
+                <Instance Name="QTAgent32_35" />
+                <Instance Name="QTAgent32_40" />
+              </Instances>
+            </CounterCategory>
+          </CounterCategories>
+          <DefaultCountersForAutomaticGraphs>
+            <DefaultCounter CategoryName="Processor" CounterName="% Processor Time" InstanceName="0" GraphName="" RunType="Local" />
+            <DefaultCounter CategoryName="Processor" CounterName="% Processor Time" InstanceName="_Total" GraphName="" RunType="Remote" />
+            <DefaultCounter CategoryName="Memory" CounterName="Available MBytes" InstanceName="" GraphName="" />
+          </DefaultCountersForAutomaticGraphs>
+        </CounterSet>
+      </CounterSets>
+      <RunConfigurations>
+        <RunConfiguration Name="Run Settings1" Description="" ResultsStoreType="Database" TimingDetailsStorage="None" SaveTestLogsOnError="true" SaveTestLogsFrequency="0" MaxErrorDetails="200" MaxErrorsPerType="1000" MaxThresholdViolations="1000" MaxRequestUrlsReported="1000" UseTestIterations="false" RunDuration="300" WarmupTime="0" CoolDownTime="0" TestIterations="100" WebTestConnectionModel="ConnectionPerUser" WebTestConnectionPoolSize="50" SampleRate="15" ValidationLevel="High" SqlTracingConnectString="" SqlTracingConnectStringDisplayValue="" SqlTracingDirectory="" SqlTracingEnabled="false" SqlTracingFileCount="2" SqlTracingRolloverEnabled="true" SqlTracingMinimumDuration="500" RunUnitTestsInAppDomain="true" CoreCount="0" UseMultipleIPs="false" TestAgentConfiguration="Default" AgentDiagnosticsLevel="Warning">
+          <CounterSetMappings>
+            <CounterSetMapping ComputerName="[CONTROLLER MACHINE]">
+              <CounterSetReferences>
+                <CounterSetReference CounterSetName="LoadTest" />
+                <CounterSetReference CounterSetName="Controller" />
+              </CounterSetReferences>
+            </CounterSetMapping>
+            <CounterSetMapping ComputerName="[AGENT MACHINES]">
+              <CounterSetReferences>
+                <CounterSetReference CounterSetName="Agent" />
+              </CounterSetReferences>
+            </CounterSetMapping>
+          </CounterSetMappings>
+          <LoadGeneratorLocations>
+            <GeoLocation Location="Default" Percentage="100" />
+          </LoadGeneratorLocations>
+        </RunConfiguration>
+      </RunConfigurations>
+    </LoadTest>
+    <WebTest name="WebTest2" storage="d:\knowledgecenter\sourcecode\nodejs-socketio-chat\socketioloadtest\webtest2.webtest" id="793d01bc-e1c4-4689-9dfe-e45013383a63" persistedWebTest="77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/Pg0KPFdlYlRlc3QgTmFtZT0iV2ViVGVzdDIiIElkPSI3OTNkMDFiYy1lMWM0LTQ2ODktOWRmZS1lNDUwMTMzODNhNjMiIE93bmVyPSIiIFByaW9yaXR5PSIyMTQ3NDgzNjQ3IiBFbmFibGVkPSJUcnVlIiBDc3NQcm9qZWN0U3RydWN0dXJlPSIiIENzc0l0ZXJhdGlvbj0iIiBUaW1lb3V0PSIwIiBXb3JrSXRlbUlkcz0iIiB4bWxucz0iaHR0cDovL21pY3Jvc29mdC5jb20vc2NoZW1hcy9WaXN1YWxTdHVkaW8vVGVhbVRlc3QvMjAxMCIgRGVzY3JpcHRpb249IiIgQ3JlZGVudGlhbFVzZXJOYW1lPSIiIENyZWRlbnRpYWxQYXNzd29yZD0iIiBQcmVBdXRoZW50aWNhdGU9IlRydWUiIFByb3h5PSJkZWZhdWx0IiBTdG9wT25FcnJvcj0iRmFsc2UiIFJlY29yZGVkUmVzdWx0RmlsZT0iV2ViVGVzdDIuYTE4NGM2NzYtNGIzMS00MzA3LThhNzQtMDg0YzRhZjRmYjgxLnJlYy53ZWJ0ZXN0cmVzdWx0IiBSZXN1bHRzTG9jYWxlPSIiPg0KICA8SXRlbXM+DQogICAgPFJlcXVlc3QgTWV0aG9kPSJHRVQiIEd1aWQ9IjBiNTU5ODJiLTk5NWEtNDQwMC1iNmM4LTQ0ZTZiODM2MjRmNSIgVmVyc2lvbj0iMS4xIiBVcmw9Imh0dHA6Ly9hcGkuYmluZy5jb20vcXNtbC5hc3B4IiBUaGlua1RpbWU9IjIiIFRpbWVvdXQ9IjMwMCIgUGFyc2VEZXBlbmRlbnRSZXF1ZXN0cz0iVHJ1ZSIgRm9sbG93UmVkaXJlY3RzPSJUcnVlIiBSZWNvcmRSZXN1bHQ9IlRydWUiIENhY2hlPSJGYWxzZSIgUmVzcG9uc2VUaW1lR29hbD0iMCIgRW5jb2Rpbmc9InV0Zi04IiBFeHBlY3RlZEh0dHBTdGF0dXNDb2RlPSIwIiBFeHBlY3RlZFJlc3BvbnNlVXJsPSIiIFJlcG9ydGluZ05hbWU9IiIgSWdub3JlSHR0cFN0YXR1c0NvZGU9IkZhbHNlIj4NCiAgICAgIDxRdWVyeVN0cmluZ1BhcmFtZXRlcnM+DQogICAgICAgIDxRdWVyeVN0cmluZ1BhcmFtZXRlciBOYW1lPSJxdWVyeSIgVmFsdWU9Imh0dHAlM0ElMkYlMkYxMTguMTk0LjEzMi4xMTUlM0E3MDgxJTJGIiBSZWNvcmRlZFZhbHVlPSJodHRwJTNBJTJGJTJGMTE4LjE5NC4xMzIuMTE1JTNBNzA4MSUyRiIgQ29ycmVsYXRpb25CaW5kaW5nPSIiIFVybEVuY29kZT0iRmFsc2UiIFVzZVRvR3JvdXBSZXN1bHRzPSJGYWxzZSIgLz4NCiAgICAgICAgPFF1ZXJ5U3RyaW5nUGFyYW1ldGVyIE5hbWU9Im1hcmtldCIgVmFsdWU9ImVuLVVTYW1wO21heHdpZHRoJTNkMzI3NjUiIFJlY29yZGVkVmFsdWU9ImVuLVVTYW1wO21heHdpZHRoJTNkMzI3NjUiIENvcnJlbGF0aW9uQmluZGluZz0iIiBVcmxFbmNvZGU9IkZhbHNlIiBVc2VUb0dyb3VwUmVzdWx0cz0iRmFsc2UiIC8+DQogICAgICAgIDxRdWVyeVN0cmluZ1BhcmFtZXRlciBOYW1lPSJyb3doZWlnaHQiIFZhbHVlPSIyMCIgUmVjb3JkZWRWYWx1ZT0iMjAiIENvcnJlbGF0aW9uQmluZGluZz0iIiBVcmxFbmNvZGU9IkZhbHNlIiBVc2VUb0dyb3VwUmVzdWx0cz0iRmFsc2UiIC8+DQogICAgICAgIDxRdWVyeVN0cmluZ1BhcmFtZXRlciBOYW1lPSJzZWN0aW9uSGVpZ2h0IiBWYWx1ZT0iMTYwIiBSZWNvcmRlZFZhbHVlPSIxNjAiIENvcnJlbGF0aW9uQmluZGluZz0iIiBVcmxFbmNvZGU9IkZhbHNlIiBVc2VUb0dyb3VwUmVzdWx0cz0iRmFsc2UiIC8+DQogICAgICA8L1F1ZXJ5U3RyaW5nUGFyYW1ldGVycz4NCiAgICA8L1JlcXVlc3Q+DQogICAgPFJlcXVlc3QgTWV0aG9kPSJHRVQiIEd1aWQ9IjBmOTBkYjIyLTlhZDktNDk4MS1iYmUwLTJkNzY3ZmYxNWY1ZCIgVmVyc2lvbj0iMS4xIiBVcmw9Imh0dHA6Ly8xMTguMTk0LjEzMi4xMTU6NzA4MS8iIFRoaW5rVGltZT0iMiIgVGltZW91dD0iMzAwIiBQYXJzZURlcGVuZGVudFJlcXVlc3RzPSJUcnVlIiBGb2xsb3dSZWRpcmVjdHM9IlRydWUiIFJlY29yZFJlc3VsdD0iVHJ1ZSIgQ2FjaGU9IkZhbHNlIiBSZXNwb25zZVRpbWVHb2FsPSIwIiBFbmNvZGluZz0idXRmLTgiIEV4cGVjdGVkSHR0cFN0YXR1c0NvZGU9IjAiIEV4cGVjdGVkUmVzcG9uc2VVcmw9IiIgUmVwb3J0aW5nTmFtZT0iIiBJZ25vcmVIdHRwU3RhdHVzQ29kZT0iRmFsc2UiIC8+DQogICAgPFJlcXVlc3QgTWV0aG9kPSJQT1NUIiBHdWlkPSI0ZDQ4NmZiZC1iYWM3LTQzMjAtOGYwOS0xMjU3MWNhNzFkODYiIFZlcnNpb249IjEuMSIgVXJsPSJodHRwczovL2xvY2FsaG9zdDoyNjE0My9za3lwZWN0b2MvdjEvcG5yL3BhcnNlIiBUaGlua1RpbWU9IjYiIFRpbWVvdXQ9IjMwMCIgUGFyc2VEZXBlbmRlbnRSZXF1ZXN0cz0iVHJ1ZSIgRm9sbG93UmVkaXJlY3RzPSJUcnVlIiBSZWNvcmRSZXN1bHQ9IlRydWUiIENhY2hlPSJGYWxzZSIgUmVzcG9uc2VUaW1lR29hbD0iMCIgRW5jb2Rpbmc9InV0Zi04IiBFeHBlY3RlZEh0dHBTdGF0dXNDb2RlPSIwIiBFeHBlY3RlZFJlc3BvbnNlVXJsPSIiIFJlcG9ydGluZ05hbWU9IiIgSWdub3JlSHR0cFN0YXR1c0NvZGU9IkZhbHNlIj4NCiAgICAgIDxIZWFkZXJzPg0KICAgICAgICA8SGVhZGVyIE5hbWU9IlByYWdtYSIgVmFsdWU9Im5vLWNhY2hlIiAvPg0KICAgICAgPC9IZWFkZXJzPg0KICAgICAgPFN0cmluZ0h0dHBCb2R5IENvbnRlbnRUeXBlPSJhcHBsaWNhdGlvbi9qc29uIiBJbnNlcnRCeXRlT3JkZXJNYXJrPSJGYWxzZSI+ZXdBaUFHa0FaQUFpQURvQUlnQXdBQ0lBTEFBaUFHd0FZUUJ1QUdjQWRRQmhBR2NBWlFCekFDSUFPZ0FpQUdVQWJnQWlBQ3dBSWdCMEFHVUFlQUIwQUNJQU9nQWlBRHdBUkFCSkFGWUFJQUJwQUdRQVBRQmNBQ0lBYkFCdkFHY0FhUUJ1QUdJQWJ3QjRBRndBSWdBK0FEd0FSQUJKQUZZQUlBQnpBSFFBZVFCc0FHVUFQUUJjQUNJQWJRQmhBSElBWndCcEFHNEFPZ0FnQURJQU1BQXdBSEFBZUFBZ0FHRUFkUUIwQUc4QU93QWdBSGNBYVFCa0FIUUFhQUE2QUNBQU1nQTJBREFBY0FCNEFEc0FYQUFpQUQ0QTk0dElVWk9QWlZGZ1R5aFhTb0FwV2FSYmhIWTFadkI1SUFBZ0FDQUFJQUFnQUNBQUlBQWdBQ0FBSUFBZ0FDQUFJQUFnQUNBQUlBQWdBRHdBUWdCU0FENEFQQUJDQUZJQVBnQThBRWtBVGdCUUFGVUFWQUFnQUc0QVlRQnRBR1VBUFFCY0FDSUFkUUJ6QUdVQWNnQnVBR0VBYlFCbEFGd0FJZ0FnQUdrQVpBQTlBRndBSWdCMUFITUFaUUJ5QUc0QVlRQnRBR1VBWEFBaUFDQUFjd0IwQUhrQWJBQmxBRDBBWEFBaUFIY0FhUUJrQUhRQWFBQTZBQ0FBTVFBNEFEQUFjQUI0QURzQVhBQWlBQ0FBZEFCNUFIQUFaUUE5QUZ3QUlnQjBBR1VBZUFCMEFGd0FJZ0FnQUhBQWJBQmhBR01BWlFCb0FHOEFiQUJrQUdVQWNnQTlBRndBSWdEM2k1T1BaVkVvZFRkaURWUmNBQ0lBUGdCY0FIUUFYQUIwQUZ3QWRBQmNBSFFBSUFBOEFFa0FUZ0JRQUZVQVZBQWdBSE1BZEFCNUFHd0FaUUE5QUZ3QUlnQjNBR2tBWkFCMEFHZ0FPZ0FnQURVQU1BQndBSGdBT3dCY0FDSUFJQUJ2QUc0QVl3QnNBR2tBWXdCckFEMEFYQUFpQUVNQVNBQkJBRlFBTGdCMUFITUFaUUJ5QUc0QVlRQnRBR1VBVXdCMUFHSUFiUUJwQUhRQUtBQXBBRHNBWEFBaUFDQUFkQUI1QUhBQVpRQTlBRndBSWdCaUFIVUFkQUIwQUc4QWJnQmNBQ0lBSUFCMkFHRUFiQUIxQUdVQVBRQmNBQ0lBMEdPa1Rsd0FJZ0ErQUNBQUlBQWdBQ0FBSUFBZ0FDQUFJQUFnQUNBQUlBQWdBQ0FBUEFBdkFFUUFTUUJXQUQ0QVBBQXZBRVFBU1FCV0FENEFQQUJFQUVrQVZnQWdBR2tBWkFBOUFGd0FJZ0JqQUdnQVlRQjBBR0lBYndCNEFGd0FJZ0FnQUhNQWRBQjVBR3dBWlFBOUFGd0FJZ0JrQUdrQWN3QndBR3dBWVFCNUFEb0FJQUJ1QUc4QWJnQmxBRHNBWEFBaUFENEFQQUJFQUVrQVZnQWdBSE1BZEFCNUFHd0FaUUE5QUZ3QUlnQmlBR0VBWXdCckFHY0FjZ0J2QUhVQWJnQmtBRG9BSUFCeUFHY0FZZ0FvQURZQU1RQXNBQ0FBTmdBeEFDd0FJQUEyQURFQUtRQTdBQ0FBZHdCcEFHUUFkQUJvQURvQUlBQXhBREFBTUFBbEFEc0FJQUJvQUdVQWFRQm5BR2dBZEFBNkFDQUFNZ0E0QUhBQWVBQTdBQ0FBWmdCdkFHNEFkQUF0QUhNQWFRQjZBR1VBT2dBZ0FERUFNZ0J3QUhnQU93QmNBQ0lBUGdBOEFFUUFTUUJXQUNBQWN3QjBBSGtBYkFCbEFEMEFYQUFpQUdNQWJ3QnNBRzhBY2dBNkFDQUFjZ0JuQUdJQUtBQXlBRFVBTlFBc0FDQUFNZ0ExQURVQUxBQWdBRElBTlFBMUFDa0FPd0FnQUd3QWFRQnVBR1VBTFFCb0FHVUFhUUJuQUdnQWRBQTZBQ0FBTWdBNEFIQUFlQUE3QUZ3QUlnQStBRHdBVXdCUUFFRUFUZ0FnQUhNQWRBQjVBR3dBWlFBOUFGd0FJZ0IwQUdVQWVBQjBBQzBBWVFCc0FHa0Fad0J1QURvQUlBQnNBR1VBWmdCMEFEc0FJQUJ0QUdFQWNnQm5BR2tBYmdBdEFHd0FaUUJtQUhRQU9nQWdBREVBTUFCd0FIZ0FPd0JjQUNJQVBnQlhBR1VBWWdCekFHOEFZd0JyQUdVQWRBQWFXYnBPU29BcFdhUmJQQUF2QUZNQVVBQkJBRTRBUGdBZ0FDQUFJQUFnQUNBQUlBQWdBQ0FBSUFBZ0FDQUFJQUFnQUNBQUlBQWdBQ0FBSUFBZ0FDQUFJQUE4QUZNQVVBQkJBRTRBSUFCekFIUUFlUUJzQUdVQVBRQmNBQ0lBYlFCaEFISUFad0JwQUc0QUxRQnlBR2tBWndCb0FIUUFPZ0FnQURFQU1BQndBSGdBT3dBZ0FHWUFiQUJ2QUdFQWRBQTZBQ0FBY2dCcEFHY0FhQUIwQURzQVhBQWlBRDRBUEFCVEFGQUFRUUJPQUNBQWFRQmtBRDBBWEFBaUFITUFhQUJ2QUhjQWRRQnpBR1VBY2dCdUFHRUFiUUJsQUZ3QUlnQStBRHdBTHdCVEFGQUFRUUJPQUQ0QUlBQjhBQ0FBWEFCMEFGd0FkQUJjQUhRQVhBQjBBRndBZEFBZ0FEd0FRUUFnQUhNQWRBQjVBR3dBWlFBOUFGd0FJZ0JqQUc4QWJBQnZBSElBT2dBZ0FISUFad0JpQUNnQU1nQTFBRFVBTEFBZ0FESUFOUUExQUN3QUlBQXlBRFVBTlFBcEFEc0FYQUFpQUNBQWJ3QnVBR01BYkFCcEFHTUFhd0E5QUZ3QUlnQkRBRWdBUVFCVUFDNEFiQUJ2QUdjQWJ3QjFBSFFBS0FBcEFGd0FJZ0FnQUdnQWNnQmxBR1lBUFFCY0FDSUFhZ0JoQUhZQVlRQnpBR01BY2dCcEFIQUFkQUE2QURzQVhBQWlBRDRBQUpENlVUd0FMd0JCQUQ0QVBBQXZBRk1BVUFCQkFFNEFQZ0FnQUNBQUlBQWdBQ0FBSUFBZ0FDQUFJQUFnQUNBQUlBQWdBQ0FBSUFBZ0FDQUFQQUF2QUVRQVNRQldBRDRBUEFBdkFFUUFTUUJXQUQ0QVBBQkVBRWtBVmdBZ0FHa0FaQUE5QUZ3QUlnQmtBRzhBWXdCY0FDSUFQZ0E4QUVRQVNRQldBQ0FBYVFCa0FEMEFYQUFpQUdNQWFBQmhBSFFBWEFBaUFENEFQQUJFQUVrQVZnQWdBR01BYkFCaEFITUFjd0E5QUZ3QUlnQnRBR1VBY3dCekFHRUFad0JsQUZ3QUlnQWdBR2tBWkFBOUFGd0FJZ0J0QUdVQWN3QnpBR0VBWndCbEFGd0FJZ0ErQUR3QVJBQkpBRllBSUFCcEFHUUFQUUJjQUNJQWJ3QnVBR3dBYVFCdUFHVUFZd0J2QUhVQWJnQjBBRndBSWdBZ0FITUFkQUI1QUd3QVpRQTlBRndBSWdCaUFHRUFZd0JyQUdjQWNnQnZBSFVBYmdCa0FEb0FJQUJ5QUdjQVlnQW9BRElBTXdBNUFDd0FJQUF5QURNQU9RQXNBQ0FBTWdBMEFEUUFLUUE3QUNBQVl3QnZBR3dBYndCeUFEb0FJQUJ5QUdjQVlnQW9BREVBTUFBeUFDd0FJQUF4QURBQU1nQXNBQ0FBTVFBd0FESUFLUUE3QUNBQVpnQnZBRzRBZEFBdEFITUFhUUI2QUdVQU9nQWdBREVBTWdCd0FIZ0FPd0FnQUcwQVlRQnlBR2NBYVFCdUFDMEFkQUJ2QUhBQU9nQWdBREVBTUFCd0FIZ0FPd0FnQUcwQVlRQnlBR2NBYVFCdUFDMEFiQUJsQUdZQWRBQTZBQ0FBTVFBd0FIQUFlQUE3QUZ3QUlnQStBRHdBTHdCRUFFa0FWZ0ErQUR3QUx3QkVBRWtBVmdBK0FEd0FSQUJKQUZZQUlBQmpBR3dBWVFCekFITUFQUUJjQUNJQWFRQnVBSEFBZFFCMEFDMEFZZ0J2QUhnQVhBQWlBRDRBUEFCRUFFa0FWZ0FnQUdNQWJBQmhBSE1BY3dBOUFGd0FJZ0JwQUc0QWNBQjFBSFFBWEFBaUFENEFQQUJKQUU0QVVBQlZBRlFBSUFCdUFHRUFiUUJsQUQwQVhBQWlBR01BYndCdUFIUUFaUUJ1QUhRQVhBQWlBQ0FBYVFCa0FEMEFYQUFpQUdNQWJ3QnVBSFFBWlFCdUFIUUFYQUFpQUNBQWRBQjVBSEFBWlFBOUFGd0FJZ0IwQUdVQWVBQjBBRndBSWdBZ0FHMEFZUUI0QUd3QVpRQnVBR2NBZEFCb0FEMEFYQUFpQURFQU5BQXdBRndBSWdBZ0FIQUFiQUJoQUdNQVpRQm9BRzhBYkFCa0FHVUFjZ0E5QUZ3QUlnRDNpNU9QWlZGS2dDbFpoVkc1V3d6L0NXTkRBSFFBY2dCc0FOQmpwRTVjQUNJQVBnQWdBQ0FBSUFBZ0FDQUFJQUFnQUNBQUlBQWdBQ0FBSUFBZ0FDQUFJQUFnQUNBQUlBQWdBQ0FBSUFBZ0FDQUFJQUFnQUR3QUx3QkVBRWtBVmdBK0FEd0FSQUJKQUZZQUlBQmpBR3dBWVFCekFITUFQUUJjQUNJQVlRQmpBSFFBYVFCdkFHNEFYQUFpQUQ0QVBBQkNBRlVBVkFCVUFFOEFUZ0FnQUdrQVpBQTlBRndBSWdCdEFHb0FjZ0JmQUhNQVpRQnVBR1FBWEFBaUFDQUFid0J1QUdNQWJBQnBBR01BYXdBOUFGd0FJZ0JEQUVnQVFRQlVBQzRBY3dCMUFHSUFiUUJwQUhRQUtBQXBBRHNBWEFBaUFDQUFkQUI1QUhBQVpRQTlBRndBSWdCaUFIVUFkQUIwQUc4QWJnQmNBQ0lBUGdEUVk2Uk9QQUF2QUVJQVZRQlVBRlFBVHdCT0FENEFJQUFnQUNBQUlBQWdBQ0FBSUFBZ0FDQUFJQUFnQUNBQUlBQWdBQ0FBSUFBZ0FDQUFJQUFnQUNBQUlBQWdBQ0FBSUFBOEFDOEFSQUJKQUZZQVBnQThBRVFBU1FCV0FDQUFjd0IwQUhrQWJBQmxBRDBBWEFBaUFHd0FaUUJtQUhRQU9nQWdBREVBTUFCd0FIZ0FPd0FnQUhRQWJ3QndBRG9BSUFBMEFEVUFjQUI0QURzQUlBQjNBR2tBWkFCMEFHZ0FPZ0FnQURFQU1BQXdBQ1VBT3dBZ0FHWUFid0J1QUhRQUxRQnpBR2tBZWdCbEFEb0FJQUF4QURJQWNBQjRBRHNBSUFCbUFHd0Fid0JoQUhRQU9nQWdBR3dBWlFCbUFIUUFPd0FnQUhBQWJ3QnpBR2tBZEFCcEFHOEFiZ0E2QUNBQVlRQmlBSE1BYndCc0FIVUFkQUJsQURzQVhBQWlBRDRBUEFCUUFENEFnbG1jWjltUEtrNUVBR1VBYlFCdkFQbGJZRThKWnk1ZXFWSU0vendBUVFBZ0FHZ0FjZ0JsQUdZQVBRQmNBQ0lBYUFCMEFIUUFjQUJ6QURvQUx3QXZBR2NBYVFCMEFHZ0FkUUJpQUM0QVl3QnZBRzBBTHdCd0FHd0FhQUIzQUdrQWJnQmNBQ0lBSUFCMEFHRUFjZ0JuQUdVQWRBQTlBRndBSWdCZkFHSUFiQUJoQUc0QWF3QmNBQ0lBUGdEM2l6QlNSd0JwQUhRQWFBQjFBR0lBYzFIb2JCRmlQQUF2QUVFQVBnQThBQzhBVUFBK0FEd0FVQUErQUZsbEMzb2EvendBUVFBZ0FHZ0FjZ0JsQUdZQVBRQmNBQ0lBYUFCMEFIUUFjQUE2QUM4QUx3QjNBSGNBZHdBdUFIQUFiQUJvQUhjQWFRQnVBQzRBWXdCdkFHMEFMd0F5QURBQU1RQTBBQzhBTUFBMUFDOEFNZ0E0QUM4QWJnQnZBR1FBWlFCcUFITUFMUUJ6QUc4QVl3QnJBR1VBZEFCcEFHOEFMd0JjQUNJQUlBQjBBR0VBY2dCbkFHVUFkQUE5QUZ3QUlnQmZBR0lBYkFCaEFHNEFhd0JjQUNJQVBnQm9BSFFBZEFCd0FEb0FMd0F2QUhjQWR3QjNBQzRBY0FCc0FHZ0Fkd0JwQUc0QUxnQmpBRzhBYlFBdkFESUFNQUF4QURRQUx3QXdBRFVBTHdBeUFEZ0FMd0J1QUc4QVpBQmxBR29BY3dBdEFITUFid0JqQUdzQVpRQjBBR2tBYndBdkFEd0FMd0JCQUQ0QVBBQXZBRkFBUGdBOEFGQUFQZ0NRYmdGNEd2ODhBRUVBSUFCb0FISUFaUUJtQUQwQVhBQWlBR2dBZEFCMEFIQUFjd0E2QUM4QUx3Qm5BR2tBZEFCb0FIVUFZZ0F1QUdNQWJ3QnRBQzhBY0FCc0FHZ0Fkd0JwQUc0QUx3QnVBRzhBWkFCbEFHb0Fjd0F0QUhNQWJ3QmpBR3NBWlFCMEFHa0Fid0F0QUdNQWFBQmhBSFFBWEFBaUFDQUFkQUJoQUhJQVp3QmxBSFFBUFFCY0FDSUFYd0JpQUd3QVlRQnVBR3NBWEFBaUFENEFhQUIwQUhRQWNBQnpBRG9BTHdBdkFHY0FhUUIwQUdnQWRRQmlBQzRBWXdCdkFHMEFMd0J3QUd3QWFBQjNBR2tBYmdBdkFHNEFid0JrQUdVQWFnQnpBQzBBY3dCdkFHTUFhd0JsQUhRQWFRQnZBQzBBWXdCb0FHRUFkQUE4QUM4QVFRQStBRHdBTHdCUUFENEFQQUF2QUVRQVNRQldBRDRBUEFBdkFFUUFTUUJXQUQ0QVBBQXZBRVFBU1FCV0FENEFQQUF2QUVRQVNRQldBRDRBUEFBdkFFUUFTUUJXQUQ0QVBBQlRBRU1BVWdCSkFGQUFWQUFnQUhNQWNnQmpBRDBBWEFBaUFDNEFMd0JqQUd3QWFRQmxBRzRBZEFBdUFHb0Fjd0JjQUNJQUlBQjBBSGtBY0FCbEFEMEFYQUFpQUhRQVpRQjRBSFFBTHdCcUFHRUFkZ0JoQUhNQVl3QnlBR2tBY0FCMEFGd0FJZ0ErQUR3QUx3QlRBRU1BVWdCSkFGQUFWQUErQUNBQUlBQWdBQ0FBSUFBaUFDd0FJZ0IxQUhJQWJBQWlBRG9BSWdCb0FIUUFkQUJ3QURvQUx3QXZBREVBTVFBNEFDNEFNUUE1QURRQUxnQXhBRE1BTWdBdUFERUFNUUExQURvQU53QXdBRGdBTVFBdkFDSUFmUUFLQUE9PTwvU3RyaW5nSHR0cEJvZHk+DQogICAgPC9SZXF1ZXN0Pg0KICAgIDxSZXF1ZXN0IE1ldGhvZD0iR0VUIiBHdWlkPSI0NGQ3ODQyNi0xZjY4LTQzYjYtOGM4NS00NjI0NWYwNWJmNTMiIFZlcnNpb249IjEuMSIgVXJsPSJodHRwOi8vMTE4LjE5NC4xMzIuMTE1OjMwMDAvc29ja2V0LmlvLyIgVGhpbmtUaW1lPSIwIiBUaW1lb3V0PSIzMDAiIFBhcnNlRGVwZW5kZW50UmVxdWVzdHM9IlRydWUiIEZvbGxvd1JlZGlyZWN0cz0iVHJ1ZSIgUmVjb3JkUmVzdWx0PSJUcnVlIiBDYWNoZT0iRmFsc2UiIFJlc3BvbnNlVGltZUdvYWw9IjAiIEVuY29kaW5nPSJ1dGYtOCIgRXhwZWN0ZWRIdHRwU3RhdHVzQ29kZT0iMCIgRXhwZWN0ZWRSZXNwb25zZVVybD0iIiBSZXBvcnRpbmdOYW1lPSIiIElnbm9yZUh0dHBTdGF0dXNDb2RlPSJGYWxzZSI+DQogICAgICA8SGVhZGVycz4NCiAgICAgICAgPEhlYWRlciBOYW1lPSJSZWZlcmVyIiBWYWx1ZT0iaHR0cDovLzExOC4xOTQuMTMyLjExNTo3MDgxLyIgLz4NCiAgICAgIDwvSGVhZGVycz4NCiAgICAgIDxRdWVyeVN0cmluZ1BhcmFtZXRlcnM+DQogICAgICAgIDxRdWVyeVN0cmluZ1BhcmFtZXRlciBOYW1lPSJFSU8iIFZhbHVlPSIzIiBSZWNvcmRlZFZhbHVlPSIzIiBDb3JyZWxhdGlvbkJpbmRpbmc9IiIgVXJsRW5jb2RlPSJGYWxzZSIgVXNlVG9Hcm91cFJlc3VsdHM9IkZhbHNlIiAvPg0KICAgICAgICA8UXVlcnlTdHJpbmdQYXJhbWV0ZXIgTmFtZT0idHJhbnNwb3J0IiBWYWx1ZT0icG9sbGluZyIgUmVjb3JkZWRWYWx1ZT0icG9sbGluZyIgQ29ycmVsYXRpb25CaW5kaW5nPSIiIFVybEVuY29kZT0iRmFsc2UiIFVzZVRvR3JvdXBSZXN1bHRzPSJGYWxzZSIgLz4NCiAgICAgICAgPFF1ZXJ5U3RyaW5nUGFyYW1ldGVyIE5hbWU9InQiIFZhbHVlPSJMTE9JZWN1IiBSZWNvcmRlZFZhbHVlPSJMTE9JZWN1IiBDb3JyZWxhdGlvbkJpbmRpbmc9IiIgVXJsRW5jb2RlPSJGYWxzZSIgVXNlVG9Hcm91cFJlc3VsdHM9IkZhbHNlIiAvPg0KICAgICAgPC9RdWVyeVN0cmluZ1BhcmFtZXRlcnM+DQogICAgPC9SZXF1ZXN0Pg0KICAgIDxSZXF1ZXN0IE1ldGhvZD0iUE9TVCIgR3VpZD0iMTBjZDQ2NzMtODBmNC00OTNmLWFmM2UtMjljN2U5YTEwYWQ2IiBWZXJzaW9uPSIxLjEiIFVybD0iaHR0cHM6Ly9sb2NhbGhvc3Q6MjYxNDMvc2t5cGVjdG9jL3YxL3Buci9wYXJzZSIgVGhpbmtUaW1lPSIwIiBUaW1lb3V0PSIzMDAiIFBhcnNlRGVwZW5kZW50UmVxdWVzdHM9IlRydWUiIEZvbGxvd1JlZGlyZWN0cz0iVHJ1ZSIgUmVjb3JkUmVzdWx0PSJUcnVlIiBDYWNoZT0iRmFsc2UiIFJlc3BvbnNlVGltZUdvYWw9IjAiIEVuY29kaW5nPSJ1dGYtOCIgRXhwZWN0ZWRIdHRwU3RhdHVzQ29kZT0iMCIgRXhwZWN0ZWRSZXNwb25zZVVybD0iIiBSZXBvcnRpbmdOYW1lPSIiIElnbm9yZUh0dHBTdGF0dXNDb2RlPSJGYWxzZSI+DQogICAgICA8SGVhZGVycz4NCiAgICAgICAgPEhlYWRlciBOYW1lPSJQcmFnbWEiIFZhbHVlPSJuby1jYWNoZSIgLz4NCiAgICAgIDwvSGVhZGVycz4NCiAgICAgIDxTdHJpbmdIdHRwQm9keSBDb250ZW50VHlwZT0iYXBwbGljYXRpb24vanNvbiIgSW5zZXJ0Qnl0ZU9yZGVyTWFyaz0iRmFsc2UiPmV3QWlBR2tBWkFBaUFEb0FJZ0F3QUNJQUxBQWlBR3dBWVFCdUFHY0FkUUJoQUdjQVpRQnpBQ0lBT2dBaUFHVUFiZ0FpQUN3QUlnQjBBR1VBZUFCMEFDSUFPZ0FpQUR3QVJBQkpBRllBSUFCekFIUUFlUUJzQUdVQVBRQmNBQ0lBWWdCaEFHTUFhd0JuQUhJQWJ3QjFBRzRBWkFBNkFDQUFjZ0JuQUdJQUtBQTJBREVBTEFBZ0FEWUFNUUFzQUNBQU5nQXhBQ2tBT3dBZ0FIY0FhUUJrQUhRQWFBQTZBQ0FBTVFBd0FEQUFKUUE3QUNBQWFBQmxBR2tBWndCb0FIUUFPZ0FnQURJQU9BQndBSGdBT3dBZ0FHWUFid0J1QUhRQUxRQnpBR2tBZWdCbEFEb0FJQUF4QURJQWNBQjRBRHNBWEFBaUFENEFQQUJFQUVrQVZnQWdBSE1BZEFCNUFHd0FaUUE5QUZ3QUlnQmpBRzhBYkFCdkFISUFPZ0FnQUhJQVp3QmlBQ2dBTWdBMUFEVUFMQUFnQURJQU5RQTFBQ3dBSUFBeUFEVUFOUUFwQURzQUlBQnNBR2tBYmdCbEFDMEFhQUJsQUdrQVp3Qm9BSFFBT2dBZ0FESUFPQUJ3QUhnQU93QmNBQ0lBUGdBOEFGTUFVQUJCQUU0QUlBQnpBSFFBZVFCc0FHVUFQUUJjQUNJQWJRQmhBSElBWndCcEFHNEFMUUJ5QUdrQVp3Qm9BSFFBT2dBZ0FERUFNQUJ3QUhnQU93QWdBR1lBYkFCdkFHRUFkQUE2QUNBQWNnQnBBR2NBYUFCMEFEc0FYQUFpQUQ0QVBBQlRBRkFBUVFCT0FDQUFhUUJrQUQwQVhBQWlBSE1BYUFCdkFIY0FkUUJ6QUdVQWNnQnVBR0VBYlFCbEFGd0FJZ0ErQUhRQVpRQnpBSFFBTUFBd0FESUFQQUF2QUZNQVVBQkJBRTRBUGdBZ0FId0FJQUJjQUhRQVhBQjBBRndBZEFCY0FIUUFYQUIwQUNBQVBBQkJBQ0FBY3dCMEFIa0FiQUJsQUQwQVhBQWlBR01BYndCc0FHOEFjZ0E2QUNBQWNnQm5BR0lBS0FBeUFEVUFOUUFzQUNBQU1nQTFBRFVBTEFBZ0FESUFOUUExQUNrQU93QmNBQ0lBSUFCdkFHNEFZd0JzQUdrQVl3QnJBRDBBWEFBaUFFTUFTQUJCQUZRQUxnQnNBRzhBWndCdkFIVUFkQUFvQUNrQVhBQWlBQ0FBYUFCeUFHVUFaZ0E5QUZ3QUlnQnFBR0VBZGdCaEFITUFZd0J5QUdrQWNBQjBBRG9BT3dCY0FDSUFQZ0FBa1BwUlBBQXZBRUVBUGdBOEFDOEFVd0JRQUVFQVRnQStBQ0FBSUFBZ0FDQUFJQUFnQUNBQUlBQWdBQ0FBSUFBZ0FDQUFJQUFnQUNBQUlBQThBQzhBUkFCSkFGWUFQZ0E4QUM4QVJBQkpBRllBUGdBOEFFUUFTUUJXQUNBQWFRQmtBRDBBWEFBaUFHUUFid0JqQUZ3QUlnQStBRHdBUkFCSkFGWUFJQUJwQUdRQVBRQmNBQ0lBWXdCb0FHRUFkQUJjQUNJQVBnQThBRVFBU1FCV0FDQUFZd0JzQUdFQWN3QnpBRDBBWEFBaUFHMEFaUUJ6QUhNQVlRQm5BR1VBWEFBaUFDQUFhUUJrQUQwQVhBQWlBRzBBWlFCekFITUFZUUJuQUdVQVhBQWlBRDRBUEFCRUFFa0FWZ0FnQUdrQVpBQTlBRndBSWdCdkFHNEFiQUJwQUc0QVpRQmpBRzhBZFFCdUFIUUFYQUFpQUNBQWN3QjBBSGtBYkFCbEFEMEFYQUFpQUdJQVlRQmpBR3NBWndCeUFHOEFkUUJ1QUdRQU9nQWdBSElBWndCaUFDZ0FNZ0F6QURrQUxBQWdBRElBTXdBNUFDd0FJQUF5QURRQU5BQXBBRHNBSUFCakFHOEFiQUJ2QUhJQU9nQWdBSElBWndCaUFDZ0FNUUF3QURJQUxBQWdBREVBTUFBeUFDd0FJQUF4QURBQU1nQXBBRHNBSUFCbUFHOEFiZ0IwQUMwQWN3QnBBSG9BWlFBNkFDQUFNUUF5QUhBQWVBQTdBQ0FBYlFCaEFISUFad0JwQUc0QUxRQjBBRzhBY0FBNkFDQUFNUUF3QUhBQWVBQTdBQ0FBYlFCaEFISUFad0JwQUc0QUxRQnNBR1VBWmdCMEFEb0FJQUF4QURBQWNBQjRBRHNBWEFBaUFENEFQQUF2QUVRQVNRQldBRDRBUEFBdkFFUUFTUUJXQUQ0QVBBQkVBRWtBVmdBZ0FHTUFiQUJoQUhNQWN3QTlBRndBSWdCcEFHNEFjQUIxQUhRQUxRQmlBRzhBZUFCY0FDSUFQZ0E4QUVRQVNRQldBQ0FBWXdCc0FHRUFjd0J6QUQwQVhBQWlBR2tBYmdCd0FIVUFkQUJjQUNJQVBnQThBRWtBVGdCUUFGVUFWQUFnQUc0QVlRQnRBR1VBUFFCY0FDSUFZd0J2QUc0QWRBQmxBRzRBZEFCY0FDSUFJQUJwQUdRQVBRQmNBQ0lBWXdCdkFHNEFkQUJsQUc0QWRBQmNBQ0lBSUFCMEFIa0FjQUJsQUQwQVhBQWlBSFFBWlFCNEFIUUFYQUFpQUNBQWJRQmhBSGdBYkFCbEFHNEFad0IwQUdnQVBRQmNBQ0lBTVFBMEFEQUFYQUFpQUNBQWNBQnNBR0VBWXdCbEFHZ0Fid0JzQUdRQVpRQnlBRDBBWEFBaUFQZUxrNDlsVVVxQUtWbUZVYmxiRFA4SlkwTUFkQUJ5QUd3QTBHT2tUbHdBSWdBK0FDQUFJQUFnQUNBQUlBQWdBQ0FBSUFBZ0FDQUFJQUFnQUNBQUlBQWdBQ0FBSUFBZ0FDQUFJQUFnQUNBQUlBQWdBQ0FBUEFBdkFFUUFTUUJXQUQ0QVBBQkVBRWtBVmdBZ0FHTUFiQUJoQUhNQWN3QTlBRndBSWdCaEFHTUFkQUJwQUc4QWJnQmNBQ0lBUGdBOEFFSUFWUUJVQUZRQVR3Qk9BQ0FBYVFCa0FEMEFYQUFpQUcwQWFnQnlBRjhBY3dCbEFHNEFaQUJjQUNJQUlBQnZBRzRBWXdCc0FHa0FZd0JyQUQwQVhBQWlBRU1BU0FCQkFGUUFMZ0J6QUhVQVlnQnRBR2tBZEFBb0FDa0FPd0JjQUNJQUlBQjBBSGtBY0FCbEFEMEFYQUFpQUdJQWRRQjBBSFFBYndCdUFGd0FJZ0ErQU5CanBFNDhBQzhBUWdCVkFGUUFWQUJQQUU0QVBnQWdBQ0FBSUFBZ0FDQUFJQUFnQUNBQUlBQWdBQ0FBSUFBZ0FDQUFJQUFnQUNBQUlBQWdBQ0FBSUFBZ0FDQUFJQUFnQUR3QUx3QkVBRWtBVmdBK0FEd0FSQUJKQUZZQUlBQnpBSFFBZVFCc0FHVUFQUUJjQUNJQWJBQmxBR1lBZEFBNkFDQUFNUUF3QUhBQWVBQTdBQ0FBZEFCdkFIQUFPZ0FnQURRQU5RQndBSGdBT3dBZ0FIY0FhUUJrQUhRQWFBQTZBQ0FBTVFBd0FEQUFKUUE3QUNBQVpnQnZBRzRBZEFBdEFITUFhUUI2QUdVQU9nQWdBREVBTWdCd0FIZ0FPd0FnQUdZQWJBQnZBR0VBZEFBNkFDQUFiQUJsQUdZQWRBQTdBQ0FBY0FCdkFITUFhUUIwQUdrQWJ3QnVBRG9BSUFCaEFHSUFjd0J2QUd3QWRRQjBBR1VBT3dCY0FDSUFQZ0E4QUZBQVBnQ0NXWnhuMlk4cVRrUUFaUUJ0QUc4QStWdGdUd2xuTGw2cFVnei9QQUJCQUNBQWFBQnlBR1VBWmdBOUFGd0FJZ0JvQUhRQWRBQndBSE1BT2dBdkFDOEFad0JwQUhRQWFBQjFBR0lBTGdCakFHOEFiUUF2QUhBQWJBQm9BSGNBYVFCdUFGd0FJZ0FnQUhRQVlRQnlBR2NBWlFCMEFEMEFYQUFpQUY4QVlnQnNBR0VBYmdCckFGd0FJZ0ErQVBlTE1GSkhBR2tBZEFCb0FIVUFZZ0J6VWVoc0VXSThBQzhBUVFBK0FEd0FMd0JRQUQ0QVBBQlFBRDRBV1dVTGVoci9QQUJCQUNBQWFBQnlBR1VBWmdBOUFGd0FJZ0JvQUhRQWRBQndBRG9BTHdBdkFIY0Fkd0IzQUM0QWNBQnNBR2dBZHdCcEFHNEFMZ0JqQUc4QWJRQXZBRElBTUFBeEFEUUFMd0F3QURVQUx3QXlBRGdBTHdCdUFHOEFaQUJsQUdvQWN3QXRBSE1BYndCakFHc0FaUUIwQUdrQWJ3QXZBRndBSWdBZ0FIUUFZUUJ5QUdjQVpRQjBBRDBBWEFBaUFGOEFZZ0JzQUdFQWJnQnJBRndBSWdBK0FHZ0FkQUIwQUhBQU9nQXZBQzhBZHdCM0FIY0FMZ0J3QUd3QWFBQjNBR2tBYmdBdUFHTUFid0J0QUM4QU1nQXdBREVBTkFBdkFEQUFOUUF2QURJQU9BQXZBRzRBYndCa0FHVUFhZ0J6QUMwQWN3QnZBR01BYXdCbEFIUUFhUUJ2QUM4QVBBQXZBRUVBUGdBOEFDOEFVQUErQUR3QVVBQStBSkJ1QVhnYS96d0FRUUFnQUdnQWNnQmxBR1lBUFFCY0FDSUFhQUIwQUhRQWNBQnpBRG9BTHdBdkFHY0FhUUIwQUdnQWRRQmlBQzRBWXdCdkFHMEFMd0J3QUd3QWFBQjNBR2tBYmdBdkFHNEFid0JrQUdVQWFnQnpBQzBBY3dCdkFHTUFhd0JsQUhRQWFRQnZBQzBBWXdCb0FHRUFkQUJjQUNJQUlBQjBBR0VBY2dCbkFHVUFkQUE5QUZ3QUlnQmZBR0lBYkFCaEFHNEFhd0JjQUNJQVBnQm9BSFFBZEFCd0FITUFPZ0F2QUM4QVp3QnBBSFFBYUFCMUFHSUFMZ0JqQUc4QWJRQXZBSEFBYkFCb0FIY0FhUUJ1QUM4QWJnQnZBR1FBWlFCcUFITUFMUUJ6QUc4QVl3QnJBR1VBZEFCcEFHOEFMUUJqQUdnQVlRQjBBRHdBTHdCQkFENEFQQUF2QUZBQVBnQThBQzhBUkFCSkFGWUFQZ0E4QUM4QVJBQkpBRllBUGdBOEFDOEFSQUJKQUZZQVBnQThBQzhBUkFCSkFGWUFQZ0FpQUN3QUlnQjFBSElBYkFBaUFEb0FJZ0JvQUhRQWRBQndBRG9BTHdBdkFERUFNUUE0QUM0QU1RQTVBRFFBTGdBeEFETUFNZ0F1QURFQU1RQTFBRG9BTndBd0FEZ0FNUUF2QUNJQWZRQUtBQT09PC9TdHJpbmdIdHRwQm9keT4NCiAgICA8L1JlcXVlc3Q+DQogICAgPFJlcXVlc3QgTWV0aG9kPSJHRVQiIEd1aWQ9ImM3NWMzZDZmLTY0YzUtNDc2MS1hZTMwLTExY2Y4YTYzNTNjNCIgVmVyc2lvbj0iMS4xIiBVcmw9Imh0dHA6Ly8xMTguMTk0LjEzMi4xMTU6MzAwMC9zb2NrZXQuaW8vIiBUaGlua1RpbWU9IjAiIFRpbWVvdXQ9IjMwMCIgUGFyc2VEZXBlbmRlbnRSZXF1ZXN0cz0iVHJ1ZSIgRm9sbG93UmVkaXJlY3RzPSJUcnVlIiBSZWNvcmRSZXN1bHQ9IlRydWUiIENhY2hlPSJGYWxzZSIgUmVzcG9uc2VUaW1lR29hbD0iMCIgRW5jb2Rpbmc9InV0Zi04IiBFeHBlY3RlZEh0dHBTdGF0dXNDb2RlPSIwIiBFeHBlY3RlZFJlc3BvbnNlVXJsPSIiIFJlcG9ydGluZ05hbWU9IiIgSWdub3JlSHR0cFN0YXR1c0NvZGU9IkZhbHNlIj4NCiAgICAgIDxRdWVyeVN0cmluZ1BhcmFtZXRlcnM+DQogICAgICAgIDxRdWVyeVN0cmluZ1BhcmFtZXRlciBOYW1lPSJFSU8iIFZhbHVlPSIzIiBSZWNvcmRlZFZhbHVlPSIzIiBDb3JyZWxhdGlvbkJpbmRpbmc9IiIgVXJsRW5jb2RlPSJGYWxzZSIgVXNlVG9Hcm91cFJlc3VsdHM9IkZhbHNlIiAvPg0KICAgICAgICA8UXVlcnlTdHJpbmdQYXJhbWV0ZXIgTmFtZT0idHJhbnNwb3J0IiBWYWx1ZT0id2Vic29ja2V0IiBSZWNvcmRlZFZhbHVlPSJ3ZWJzb2NrZXQiIENvcnJlbGF0aW9uQmluZGluZz0iIiBVcmxFbmNvZGU9IkZhbHNlIiBVc2VUb0dyb3VwUmVzdWx0cz0iRmFsc2UiIC8+DQogICAgICAgIDxRdWVyeVN0cmluZ1BhcmFtZXRlciBOYW1lPSJzaWQiIFZhbHVlPSJnU0g1Qm5fVUlINEJtTjdFQUFBQiIgUmVjb3JkZWRWYWx1ZT0iZ1NINUJuX1VJSDRCbU43RUFBQUIiIENvcnJlbGF0aW9uQmluZGluZz0iIiBVcmxFbmNvZGU9IkZhbHNlIiBVc2VUb0dyb3VwUmVzdWx0cz0iRmFsc2UiIC8+DQogICAgICA8L1F1ZXJ5U3RyaW5nUGFyYW1ldGVycz4NCiAgICA8L1JlcXVlc3Q+DQogICAgPFJlcXVlc3QgTWV0aG9kPSJHRVQiIEd1aWQ9ImNjMmYzNjgxLTllNzAtNGM1MC1iOWRjLTIyMWY5NDVkMmNiYiIgVmVyc2lvbj0iMS4xIiBVcmw9Imh0dHA6Ly8xMTguMTk0LjEzMi4xMTU6MzAwMC9zb2NrZXQuaW8vIiBUaGlua1RpbWU9IjAiIFRpbWVvdXQ9IjMwMCIgUGFyc2VEZXBlbmRlbnRSZXF1ZXN0cz0iVHJ1ZSIgRm9sbG93UmVkaXJlY3RzPSJUcnVlIiBSZWNvcmRSZXN1bHQ9IlRydWUiIENhY2hlPSJGYWxzZSIgUmVzcG9uc2VUaW1lR29hbD0iMCIgRW5jb2Rpbmc9InV0Zi04IiBFeHBlY3RlZEh0dHBTdGF0dXNDb2RlPSIwIiBFeHBlY3RlZFJlc3BvbnNlVXJsPSIiIFJlcG9ydGluZ05hbWU9IiIgSWdub3JlSHR0cFN0YXR1c0NvZGU9IkZhbHNlIj4NCiAgICAgIDxIZWFkZXJzPg0KICAgICAgICA8SGVhZGVyIE5hbWU9IlJlZmVyZXIiIFZhbHVlPSJodHRwOi8vMTE4LjE5NC4xMzIuMTE1OjcwODEvIiAvPg0KICAgICAgPC9IZWFkZXJzPg0KICAgICAgPFF1ZXJ5U3RyaW5nUGFyYW1ldGVycz4NCiAgICAgICAgPFF1ZXJ5U3RyaW5nUGFyYW1ldGVyIE5hbWU9IkVJTyIgVmFsdWU9IjMiIFJlY29yZGVkVmFsdWU9IjMiIENvcnJlbGF0aW9uQmluZGluZz0iIiBVcmxFbmNvZGU9IkZhbHNlIiBVc2VUb0dyb3VwUmVzdWx0cz0iRmFsc2UiIC8+DQogICAgICAgIDxRdWVyeVN0cmluZ1BhcmFtZXRlciBOYW1lPSJ0cmFuc3BvcnQiIFZhbHVlPSJwb2xsaW5nIiBSZWNvcmRlZFZhbHVlPSJwb2xsaW5nIiBDb3JyZWxhdGlvbkJpbmRpbmc9IiIgVXJsRW5jb2RlPSJGYWxzZSIgVXNlVG9Hcm91cFJlc3VsdHM9IkZhbHNlIiAvPg0KICAgICAgICA8UXVlcnlTdHJpbmdQYXJhbWV0ZXIgTmFtZT0idCIgVmFsdWU9IkxMT0llZXAiIFJlY29yZGVkVmFsdWU9IkxMT0llZXAiIENvcnJlbGF0aW9uQmluZGluZz0iIiBVcmxFbmNvZGU9IkZhbHNlIiBVc2VUb0dyb3VwUmVzdWx0cz0iRmFsc2UiIC8+DQogICAgICAgIDxRdWVyeVN0cmluZ1BhcmFtZXRlciBOYW1lPSJzaWQiIFZhbHVlPSJnU0g1Qm5fVUlINEJtTjdFQUFBQiIgUmVjb3JkZWRWYWx1ZT0iZ1NINUJuX1VJSDRCbU43RUFBQUIiIENvcnJlbGF0aW9uQmluZGluZz0iIiBVcmxFbmNvZGU9IkZhbHNlIiBVc2VUb0dyb3VwUmVzdWx0cz0iRmFsc2UiIC8+DQogICAgICA8L1F1ZXJ5U3RyaW5nUGFyYW1ldGVycz4NCiAgICA8L1JlcXVlc3Q+DQogICAgPFJlcXVlc3QgTWV0aG9kPSJQT1NUIiBHdWlkPSI2MDIyYjE4ZC0zNDQzLTQ4MWEtOGRlMC03YmYwNDRjMDJhNmUiIFZlcnNpb249IjEuMSIgVXJsPSJodHRwOi8vMTE4LjE5NC4xMzIuMTE1OjMwMDAvc29ja2V0LmlvLyIgVGhpbmtUaW1lPSIwIiBUaW1lb3V0PSIzMDAiIFBhcnNlRGVwZW5kZW50UmVxdWVzdHM9IlRydWUiIEZvbGxvd1JlZGlyZWN0cz0iVHJ1ZSIgUmVjb3JkUmVzdWx0PSJUcnVlIiBDYWNoZT0iRmFsc2UiIFJlc3BvbnNlVGltZUdvYWw9IjAiIEVuY29kaW5nPSJ1dGYtOCIgRXhwZWN0ZWRIdHRwU3RhdHVzQ29kZT0iMCIgRXhwZWN0ZWRSZXNwb25zZVVybD0iIiBSZXBvcnRpbmdOYW1lPSIiIElnbm9yZUh0dHBTdGF0dXNDb2RlPSJGYWxzZSI+DQogICAgICA8SGVhZGVycz4NCiAgICAgICAgPEhlYWRlciBOYW1lPSJSZWZlcmVyIiBWYWx1ZT0iaHR0cDovLzExOC4xOTQuMTMyLjExNTo3MDgxLyIgLz4NCiAgICAgIDwvSGVhZGVycz4NCiAgICAgIDxRdWVyeVN0cmluZ1BhcmFtZXRlcnM+DQogICAgICAgIDxRdWVyeVN0cmluZ1BhcmFtZXRlciBOYW1lPSJFSU8iIFZhbHVlPSIzIiBSZWNvcmRlZFZhbHVlPSIzIiBDb3JyZWxhdGlvbkJpbmRpbmc9IiIgVXJsRW5jb2RlPSJGYWxzZSIgVXNlVG9Hcm91cFJlc3VsdHM9IkZhbHNlIiAvPg0KICAgICAgICA8UXVlcnlTdHJpbmdQYXJhbWV0ZXIgTmFtZT0idHJhbnNwb3J0IiBWYWx1ZT0icG9sbGluZyIgUmVjb3JkZWRWYWx1ZT0icG9sbGluZyIgQ29ycmVsYXRpb25CaW5kaW5nPSIiIFVybEVuY29kZT0iRmFsc2UiIFVzZVRvR3JvdXBSZXN1bHRzPSJGYWxzZSIgLz4NCiAgICAgICAgPFF1ZXJ5U3RyaW5nUGFyYW1ldGVyIE5hbWU9InQiIFZhbHVlPSJMTE9JZWZYIiBSZWNvcmRlZFZhbHVlPSJMTE9JZWZYIiBDb3JyZWxhdGlvbkJpbmRpbmc9IiIgVXJsRW5jb2RlPSJGYWxzZSIgVXNlVG9Hcm91cFJlc3VsdHM9IkZhbHNlIiAvPg0KICAgICAgICA8UXVlcnlTdHJpbmdQYXJhbWV0ZXIgTmFtZT0ic2lkIiBWYWx1ZT0iZ1NINUJuX1VJSDRCbU43RUFBQUIiIFJlY29yZGVkVmFsdWU9ImdTSDVCbl9VSUg0Qm1ON0VBQUFCIiBDb3JyZWxhdGlvbkJpbmRpbmc9IiIgVXJsRW5jb2RlPSJGYWxzZSIgVXNlVG9Hcm91cFJlc3VsdHM9IkZhbHNlIiAvPg0KICAgICAgPC9RdWVyeVN0cmluZ1BhcmFtZXRlcnM+DQogICAgICA8U3RyaW5nSHR0cEJvZHkgQ29udGVudFR5cGU9InRleHQvcGxhaW47Y2hhcnNldD1VVEYtOCIgSW5zZXJ0Qnl0ZU9yZGVyTWFyaz0iRmFsc2UiPk5nQXlBRG9BTkFBeUFGc0FJZ0JzQUc4QVp3QnBBRzRBSWdBc0FIc0FJZ0IxQUhNQVpRQnlBR2tBWkFBaUFEb0FJZ0F4QURRQU5nQTJBREFBTmdBMUFERUFNZ0EzQURnQU1nQTNBRE1BTlFBMEFDSUFMQUFpQUhVQWN3QmxBSElBYmdCaEFHMEFaUUFpQURvQUlnQjBBR1VBY3dCMEFEQUFNQUF5QUNJQWZRQmRBQT09PC9TdHJpbmdIdHRwQm9keT4NCiAgICA8L1JlcXVlc3Q+DQogICAgPFJlcXVlc3QgTWV0aG9kPSJHRVQiIEd1aWQ9IjcxNDFlMWY0LWIwMzAtNGY5Mi1iNmVhLWJiYzlhOTdmNDJmNyIgVmVyc2lvbj0iMS4xIiBVcmw9Imh0dHA6Ly8xMTguMTk0LjEzMi4xMTU6MzAwMC9zb2NrZXQuaW8vIiBUaGlua1RpbWU9IjAiIFRpbWVvdXQ9IjMwMCIgUGFyc2VEZXBlbmRlbnRSZXF1ZXN0cz0iVHJ1ZSIgRm9sbG93UmVkaXJlY3RzPSJUcnVlIiBSZWNvcmRSZXN1bHQ9IlRydWUiIENhY2hlPSJGYWxzZSIgUmVzcG9uc2VUaW1lR29hbD0iMCIgRW5jb2Rpbmc9InV0Zi04IiBFeHBlY3RlZEh0dHBTdGF0dXNDb2RlPSIwIiBFeHBlY3RlZFJlc3BvbnNlVXJsPSIiIFJlcG9ydGluZ05hbWU9IiIgSWdub3JlSHR0cFN0YXR1c0NvZGU9IkZhbHNlIj4NCiAgICAgIDxIZWFkZXJzPg0KICAgICAgICA8SGVhZGVyIE5hbWU9IlJlZmVyZXIiIFZhbHVlPSJodHRwOi8vMTE4LjE5NC4xMzIuMTE1OjcwODEvIiAvPg0KICAgICAgPC9IZWFkZXJzPg0KICAgICAgPFF1ZXJ5U3RyaW5nUGFyYW1ldGVycz4NCiAgICAgICAgPFF1ZXJ5U3RyaW5nUGFyYW1ldGVyIE5hbWU9IkVJTyIgVmFsdWU9IjMiIFJlY29yZGVkVmFsdWU9IjMiIENvcnJlbGF0aW9uQmluZGluZz0iIiBVcmxFbmNvZGU9IkZhbHNlIiBVc2VUb0dyb3VwUmVzdWx0cz0iRmFsc2UiIC8+DQogICAgICAgIDxRdWVyeVN0cmluZ1BhcmFtZXRlciBOYW1lPSJ0cmFuc3BvcnQiIFZhbHVlPSJwb2xsaW5nIiBSZWNvcmRlZFZhbHVlPSJwb2xsaW5nIiBDb3JyZWxhdGlvbkJpbmRpbmc9IiIgVXJsRW5jb2RlPSJGYWxzZSIgVXNlVG9Hcm91cFJlc3VsdHM9IkZhbHNlIiAvPg0KICAgICAgICA8UXVlcnlTdHJpbmdQYXJhbWV0ZXIgTmFtZT0idCIgVmFsdWU9IkxMT0llZmgiIFJlY29yZGVkVmFsdWU9IkxMT0llZmgiIENvcnJlbGF0aW9uQmluZGluZz0iIiBVcmxFbmNvZGU9IkZhbHNlIiBVc2VUb0dyb3VwUmVzdWx0cz0iRmFsc2UiIC8+DQogICAgICAgIDxRdWVyeVN0cmluZ1BhcmFtZXRlciBOYW1lPSJzaWQiIFZhbHVlPSJnU0g1Qm5fVUlINEJtTjdFQUFBQiIgUmVjb3JkZWRWYWx1ZT0iZ1NINUJuX1VJSDRCbU43RUFBQUIiIENvcnJlbGF0aW9uQmluZGluZz0iIiBVcmxFbmNvZGU9IkZhbHNlIiBVc2VUb0dyb3VwUmVzdWx0cz0iRmFsc2UiIC8+DQogICAgICA8L1F1ZXJ5U3RyaW5nUGFyYW1ldGVycz4NCiAgICA8L1JlcXVlc3Q+DQogICAgPFJlcXVlc3QgTWV0aG9kPSJQT1NUIiBHdWlkPSJiYjc2MDRiNy1jNTRkLTQ0OTUtYWUwNS1mMWNhNzM1YTYzM2IiIFZlcnNpb249IjEuMSIgVXJsPSJodHRwczovL2xvY2FsaG9zdDoyNjE0My9za3lwZWN0b2MvdjEvcG5yL3BhcnNlIiBUaGlua1RpbWU9IjciIFRpbWVvdXQ9IjMwMCIgUGFyc2VEZXBlbmRlbnRSZXF1ZXN0cz0iVHJ1ZSIgRm9sbG93UmVkaXJlY3RzPSJUcnVlIiBSZWNvcmRSZXN1bHQ9IlRydWUiIENhY2hlPSJGYWxzZSIgUmVzcG9uc2VUaW1lR29hbD0iMCIgRW5jb2Rpbmc9InV0Zi04IiBFeHBlY3RlZEh0dHBTdGF0dXNDb2RlPSIwIiBFeHBlY3RlZFJlc3BvbnNlVXJsPSIiIFJlcG9ydGluZ05hbWU9IiIgSWdub3JlSHR0cFN0YXR1c0NvZGU9IkZhbHNlIj4NCiAgICAgIDxIZWFkZXJzPg0KICAgICAgICA8SGVhZGVyIE5hbWU9IlByYWdtYSIgVmFsdWU9Im5vLWNhY2hlIiAvPg0KICAgICAgPC9IZWFkZXJzPg0KICAgICAgPFN0cmluZ0h0dHBCb2R5IENvbnRlbnRUeXBlPSJhcHBsaWNhdGlvbi9qc29uIiBJbnNlcnRCeXRlT3JkZXJNYXJrPSJGYWxzZSI+ZXdBaUFHa0FaQUFpQURvQUlnQXdBQ0lBTEFBaUFHd0FZUUJ1QUdjQWRRQmhBR2NBWlFCekFDSUFPZ0FpQUdVQWJnQWlBQ3dBSWdCMEFHVUFlQUIwQUNJQU9nQWlBRHdBUkFCSkFGWUFJQUJwQUdRQVBRQmNBQ0lBYndCdUFHd0FhUUJ1QUdVQVl3QnZBSFVBYmdCMEFGd0FJZ0FnQUhNQWRBQjVBR3dBWlFBOUFGd0FJZ0JpQUdFQVl3QnJBR2NBY2dCdkFIVUFiZ0JrQURvQUlBQnlBR2NBWWdBb0FESUFNd0E1QUN3QUlBQXlBRE1BT1FBc0FDQUFNZ0EwQURRQUtRQTdBQ0FBWXdCdkFHd0Fid0J5QURvQUlBQnlBR2NBWWdBb0FERUFNQUF5QUN3QUlBQXhBREFBTWdBc0FDQUFNUUF3QURJQUtRQTdBQ0FBWmdCdkFHNEFkQUF0QUhNQWFRQjZBR1VBT2dBZ0FERUFNZ0J3QUhnQU93QWdBRzBBWVFCeUFHY0FhUUJ1QUMwQWRBQnZBSEFBT2dBZ0FERUFNQUJ3QUhnQU93QWdBRzBBWVFCeUFHY0FhUUJ1QUMwQWJBQmxBR1lBZEFBNkFDQUFNUUF3QUhBQWVBQTdBRndBSWdBK0FGTmZUVkp4VVFsbklBQXlBQ0FBdWs0b1Y3OStEUDhvVjc5K0YxSm9pQnIvZEFCbEFITUFkQUF3QURBQU1RQUJNSFFBWlFCekFIUUFNQUF3QURJQVBBQXZBRVFBU1FCV0FENEFQQUJUQUVVQVF3QlVBRWtBVHdCT0FDQUFZd0JzQUdFQWN3QnpBRDBBWEFBaUFITUFlUUJ6QUhRQVpRQnRBQ0FBU2dBdEFHMEFhZ0J5QUd3QWFRQnVBR3NBVndCeUFHRUFjQUFnQUVvQUxRQmpBSFVBZEFCTkFITUFad0JjQUNJQVBnQThBRVFBU1FCV0FDQUFZd0JzQUdFQWN3QnpBRDBBWEFBaUFHMEFjd0JuQUMwQWN3QjVBSE1BZEFCbEFHMEFYQUFpQUQ0QWRBQmxBSE1BZEFBd0FEQUFNZ0FnQUtCU1pWR0dUa3FBS1Zta1d6d0FMd0JFQUVrQVZnQStBRHdBTHdCVEFFVUFRd0JVQUVrQVR3Qk9BRDRBSWdBc0FDSUFkUUJ5QUd3QUlnQTZBQ0lBYUFCMEFIUUFjQUE2QUM4QUx3QXhBREVBT0FBdUFERUFPUUEwQUM0QU1RQXpBRElBTGdBeEFERUFOUUE2QURjQU1BQTRBREVBTHdBaUFIMEFDZ0E9PC9TdHJpbmdIdHRwQm9keT4NCiAgICA8L1JlcXVlc3Q+DQogICAgPFJlcXVlc3QgTWV0aG9kPSJQT1NUIiBHdWlkPSI3MjIyMTIyNS1kZjEyLTRiYTQtYmI5OS0zOTAwYTI4NGNiN2QiIFZlcnNpb249IjEuMSIgVXJsPSJodHRwczovL2xvY2FsaG9zdDoyNjE0My9za3lwZWN0b2MvdjEvcG5yL3BhcnNlIiBUaGlua1RpbWU9IjIyIiBUaW1lb3V0PSIzMDAiIFBhcnNlRGVwZW5kZW50UmVxdWVzdHM9IlRydWUiIEZvbGxvd1JlZGlyZWN0cz0iVHJ1ZSIgUmVjb3JkUmVzdWx0PSJUcnVlIiBDYWNoZT0iRmFsc2UiIFJlc3BvbnNlVGltZUdvYWw9IjAiIEVuY29kaW5nPSJ1dGYtOCIgRXhwZWN0ZWRIdHRwU3RhdHVzQ29kZT0iMCIgRXhwZWN0ZWRSZXNwb25zZVVybD0iIiBSZXBvcnRpbmdOYW1lPSIiIElnbm9yZUh0dHBTdGF0dXNDb2RlPSJGYWxzZSI+DQogICAgICA8SGVhZGVycz4NCiAgICAgICAgPEhlYWRlciBOYW1lPSJQcmFnbWEiIFZhbHVlPSJuby1jYWNoZSIgLz4NCiAgICAgIDwvSGVhZGVycz4NCiAgICAgIDxTdHJpbmdIdHRwQm9keSBDb250ZW50VHlwZT0iYXBwbGljYXRpb24vanNvbiIgSW5zZXJ0Qnl0ZU9yZGVyTWFyaz0iRmFsc2UiPmV3QWlBR2tBWkFBaUFEb0FJZ0F3QUNJQUxBQWlBR3dBWVFCdUFHY0FkUUJoQUdjQVpRQnpBQ0lBT2dBaUFHVUFiZ0FpQUN3QUlnQjBBR1VBZUFCMEFDSUFPZ0FpQUR3QVV3QkZBRU1BVkFCSkFFOEFUZ0FnQUdNQWJBQmhBSE1BY3dBOUFGd0FJZ0IxQUhNQVpRQnlBRndBSWdBK0FEd0FSQUJKQUZZQVBnQm9BR1VBYkFCc0FHOEFJUUE4QUM4QVJBQkpBRllBUGdBOEFGTUFVQUJCQUU0QVBnQjBBR1VBY3dCMEFEQUFNQUF5QUR3QUx3QlRBRkFBUVFCT0FENEFQQUF2QUZNQVJRQkRBRlFBU1FCUEFFNEFQZ0FpQUN3QUlnQjFBSElBYkFBaUFEb0FJZ0JvQUhRQWRBQndBRG9BTHdBdkFERUFNUUE0QUM0QU1RQTVBRFFBTGdBeEFETUFNZ0F1QURFQU1RQTFBRG9BTndBd0FEZ0FNUUF2QUNJQWZRQUtBQT09PC9TdHJpbmdIdHRwQm9keT4NCiAgICA8L1JlcXVlc3Q+DQogICAgPFJlcXVlc3QgTWV0aG9kPSJQT1NUIiBHdWlkPSIxZTQ2NTAwMy05MTcxLTRjNzEtYWYzNC03ZTAyMDM0ZDRiNmUiIFZlcnNpb249IjEuMSIgVXJsPSJodHRwczovL2xvY2FsaG9zdDoyNjE0My9za3lwZWN0b2MvdjEvcG5yL3BhcnNlIiBUaGlua1RpbWU9IjUiIFRpbWVvdXQ9IjMwMCIgUGFyc2VEZXBlbmRlbnRSZXF1ZXN0cz0iVHJ1ZSIgRm9sbG93UmVkaXJlY3RzPSJUcnVlIiBSZWNvcmRSZXN1bHQ9IlRydWUiIENhY2hlPSJGYWxzZSIgUmVzcG9uc2VUaW1lR29hbD0iMCIgRW5jb2Rpbmc9InV0Zi04IiBFeHBlY3RlZEh0dHBTdGF0dXNDb2RlPSIwIiBFeHBlY3RlZFJlc3BvbnNlVXJsPSIiIFJlcG9ydGluZ05hbWU9IiIgSWdub3JlSHR0cFN0YXR1c0NvZGU9IkZhbHNlIj4NCiAgICAgIDxIZWFkZXJzPg0KICAgICAgICA8SGVhZGVyIE5hbWU9IlByYWdtYSIgVmFsdWU9Im5vLWNhY2hlIiAvPg0KICAgICAgPC9IZWFkZXJzPg0KICAgICAgPFN0cmluZ0h0dHBCb2R5IENvbnRlbnRUeXBlPSJhcHBsaWNhdGlvbi9qc29uIiBJbnNlcnRCeXRlT3JkZXJNYXJrPSJGYWxzZSI+ZXdBaUFHa0FaQUFpQURvQUlnQXdBQ0lBTEFBaUFHd0FZUUJ1QUdjQWRRQmhBR2NBWlFCekFDSUFPZ0FpQUdVQWJnQWlBQ3dBSWdCMEFHVUFlQUIwQUNJQU9nQWlBRHdBVXdCRkFFTUFWQUJKQUU4QVRnQWdBR01BYkFCaEFITUFjd0E5QUZ3QUlnQjFBSE1BWlFCeUFGd0FJZ0ErQUR3QVJBQkpBRllBUGdCb0FHa0FQQUF2QUVRQVNRQldBRDRBUEFCVEFGQUFRUUJPQUQ0QWRBQmxBSE1BZEFBd0FEQUFNZ0E4QUM4QVV3QlFBRUVBVGdBK0FEd0FMd0JUQUVVQVF3QlVBRWtBVHdCT0FENEFJZ0FzQUNJQWRRQnlBR3dBSWdBNkFDSUFhQUIwQUhRQWNBQTZBQzhBTHdBeEFERUFPQUF1QURFQU9RQTBBQzRBTVFBekFESUFMZ0F4QURFQU5RQTZBRGNBTUFBNEFERUFMd0FpQUgwQUNnQT08L1N0cmluZ0h0dHBCb2R5Pg0KICAgIDwvUmVxdWVzdD4NCiAgICA8UmVxdWVzdCBNZXRob2Q9IkdFVCIgR3VpZD0iNzEyNWUxYzItNDhmYi00YjM3LWE1NzktMzJhZjQzZGQ3OGFiIiBWZXJzaW9uPSIxLjEiIFVybD0iaHR0cDovLzExOC4xOTQuMTMyLjExNTo3MDgxLyIgVGhpbmtUaW1lPSIwIiBUaW1lb3V0PSIzMDAiIFBhcnNlRGVwZW5kZW50UmVxdWVzdHM9IlRydWUiIEZvbGxvd1JlZGlyZWN0cz0iVHJ1ZSIgUmVjb3JkUmVzdWx0PSJUcnVlIiBDYWNoZT0iRmFsc2UiIFJlc3BvbnNlVGltZUdvYWw9IjAiIEVuY29kaW5nPSJ1dGYtOCIgRXhwZWN0ZWRIdHRwU3RhdHVzQ29kZT0iMCIgRXhwZWN0ZWRSZXNwb25zZVVybD0iIiBSZXBvcnRpbmdOYW1lPSIiIElnbm9yZUh0dHBTdGF0dXNDb2RlPSJGYWxzZSIgLz4NCiAgICA8UmVxdWVzdCBNZXRob2Q9IlBPU1QiIEd1aWQ9IjFlNzYxODExLWRkZDEtNDZlZi1iMWUyLWQ4YzIyNjc0Y2NjZSIgVmVyc2lvbj0iMS4xIiBVcmw9Imh0dHBzOi8vbG9jYWxob3N0OjI2MTQzL3NreXBlY3RvYy92MS9wbnIvcGFyc2UiIFRoaW5rVGltZT0iMCIgVGltZW91dD0iMzAwIiBQYXJzZURlcGVuZGVudFJlcXVlc3RzPSJUcnVlIiBGb2xsb3dSZWRpcmVjdHM9IlRydWUiIFJlY29yZFJlc3VsdD0iVHJ1ZSIgQ2FjaGU9IkZhbHNlIiBSZXNwb25zZVRpbWVHb2FsPSIwIiBFbmNvZGluZz0idXRmLTgiIEV4cGVjdGVkSHR0cFN0YXR1c0NvZGU9IjAiIEV4cGVjdGVkUmVzcG9uc2VVcmw9IiIgUmVwb3J0aW5nTmFtZT0iIiBJZ25vcmVIdHRwU3RhdHVzQ29kZT0iRmFsc2UiPg0KICAgICAgPEhlYWRlcnM+DQogICAgICAgIDxIZWFkZXIgTmFtZT0iUHJhZ21hIiBWYWx1ZT0ibm8tY2FjaGUiIC8+DQogICAgICA8L0hlYWRlcnM+DQogICAgICA8U3RyaW5nSHR0cEJvZHkgQ29udGVudFR5cGU9ImFwcGxpY2F0aW9uL2pzb24iIEluc2VydEJ5dGVPcmRlck1hcms9IkZhbHNlIj5ld0FpQUdrQVpBQWlBRG9BSWdBd0FDSUFMQUFpQUd3QVlRQnVBR2NBZFFCaEFHY0FaUUJ6QUNJQU9nQWlBR1VBYmdBaUFDd0FJZ0IwQUdVQWVBQjBBQ0lBT2dBaUFEd0FSQUJKQUZZQUlBQnBBR1FBUFFCY0FDSUFiQUJ2QUdjQWFRQnVBR0lBYndCNEFGd0FJZ0ErQUR3QVJBQkpBRllBSUFCekFIUUFlUUJzQUdVQVBRQmNBQ0lBYlFCaEFISUFad0JwQUc0QU9nQWdBRElBTUFBd0FIQUFlQUFnQUdFQWRRQjBBRzhBT3dBZ0FIY0FhUUJrQUhRQWFBQTZBQ0FBTWdBMkFEQUFjQUI0QURzQVhBQWlBRDRBOTR0SVVaT1BaVkZnVHloWFNvQXBXYVJiaEhZMVp2QjVJQUFnQUNBQUlBQWdBQ0FBSUFBZ0FDQUFJQUFnQUNBQUlBQWdBQ0FBSUFBZ0FEd0FRZ0JTQUQ0QVBBQkNBRklBUGdBOEFFa0FUZ0JRQUZVQVZBQWdBRzRBWVFCdEFHVUFQUUJjQUNJQWRRQnpBR1VBY2dCdUFHRUFiUUJsQUZ3QUlnQWdBR2tBWkFBOUFGd0FJZ0IxQUhNQVpRQnlBRzRBWVFCdEFHVUFYQUFpQUNBQWN3QjBBSGtBYkFCbEFEMEFYQUFpQUhjQWFRQmtBSFFBYUFBNkFDQUFNUUE0QURBQWNBQjRBRHNBWEFBaUFDQUFkQUI1QUhBQVpRQTlBRndBSWdCMEFHVUFlQUIwQUZ3QUlnQWdBSEFBYkFCaEFHTUFaUUJvQUc4QWJBQmtBR1VBY2dBOUFGd0FJZ0QzaTVPUFpWRW9kVGRpRFZSY0FDSUFQZ0JjQUhRQVhBQjBBRndBZEFCY0FIUUFJQUE4QUVrQVRnQlFBRlVBVkFBZ0FITUFkQUI1QUd3QVpRQTlBRndBSWdCM0FHa0FaQUIwQUdnQU9nQWdBRFVBTUFCd0FIZ0FPd0JjQUNJQUlBQnZBRzRBWXdCc0FHa0FZd0JyQUQwQVhBQWlBRU1BU0FCQkFGUUFMZ0IxQUhNQVpRQnlBRzRBWVFCdEFHVUFVd0IxQUdJQWJRQnBBSFFBS0FBcEFEc0FYQUFpQUNBQWRBQjVBSEFBWlFBOUFGd0FJZ0JpQUhVQWRBQjBBRzhBYmdCY0FDSUFJQUIyQUdFQWJBQjFBR1VBUFFCY0FDSUEwR09rVGx3QUlnQStBQ0FBSUFBZ0FDQUFJQUFnQUNBQUlBQWdBQ0FBSUFBZ0FDQUFQQUF2QUVRQVNRQldBRDRBUEFBdkFFUUFTUUJXQUQ0QVBBQkVBRWtBVmdBZ0FHa0FaQUE5QUZ3QUlnQmpBR2dBWVFCMEFHSUFid0I0QUZ3QUlnQWdBSE1BZEFCNUFHd0FaUUE5QUZ3QUlnQmtBR2tBY3dCd0FHd0FZUUI1QURvQUlBQnVBRzhBYmdCbEFEc0FYQUFpQUQ0QVBBQkVBRWtBVmdBZ0FITUFkQUI1QUd3QVpRQTlBRndBSWdCaUFHRUFZd0JyQUdjQWNnQnZBSFVBYmdCa0FEb0FJQUJ5QUdjQVlnQW9BRFlBTVFBc0FDQUFOZ0F4QUN3QUlBQTJBREVBS1FBN0FDQUFkd0JwQUdRQWRBQm9BRG9BSUFBeEFEQUFNQUFsQURzQUlBQm9BR1VBYVFCbkFHZ0FkQUE2QUNBQU1nQTRBSEFBZUFBN0FDQUFaZ0J2QUc0QWRBQXRBSE1BYVFCNkFHVUFPZ0FnQURFQU1nQndBSGdBT3dCY0FDSUFQZ0E4QUVRQVNRQldBQ0FBY3dCMEFIa0FiQUJsQUQwQVhBQWlBR01BYndCc0FHOEFjZ0E2QUNBQWNnQm5BR0lBS0FBeUFEVUFOUUFzQUNBQU1nQTFBRFVBTEFBZ0FESUFOUUExQUNrQU93QWdBR3dBYVFCdUFHVUFMUUJvQUdVQWFRQm5BR2dBZEFBNkFDQUFNZ0E0QUhBQWVBQTdBRndBSWdBK0FEd0FVd0JRQUVFQVRnQWdBSE1BZEFCNUFHd0FaUUE5QUZ3QUlnQjBBR1VBZUFCMEFDMEFZUUJzQUdrQVp3QnVBRG9BSUFCc0FHVUFaZ0IwQURzQUlBQnRBR0VBY2dCbkFHa0FiZ0F0QUd3QVpRQm1BSFFBT2dBZ0FERUFNQUJ3QUhnQU93QmNBQ0lBUGdCWEFHVUFZZ0J6QUc4QVl3QnJBR1VBZEFBYVdicE9Tb0FwV2FSYlBBQXZBRk1BVUFCQkFFNEFQZ0FnQUNBQUlBQWdBQ0FBSUFBZ0FDQUFJQUFnQUNBQUlBQWdBQ0FBSUFBZ0FDQUFJQUFnQUNBQUlBQThBRk1BVUFCQkFFNEFJQUJ6QUhRQWVRQnNBR1VBUFFCY0FDSUFiUUJoQUhJQVp3QnBBRzRBTFFCeUFHa0Fad0JvQUhRQU9nQWdBREVBTUFCd0FIZ0FPd0FnQUdZQWJBQnZBR0VBZEFBNkFDQUFjZ0JwQUdjQWFBQjBBRHNBWEFBaUFENEFQQUJUQUZBQVFRQk9BQ0FBYVFCa0FEMEFYQUFpQUhNQWFBQnZBSGNBZFFCekFHVUFjZ0J1QUdFQWJRQmxBRndBSWdBK0FEd0FMd0JUQUZBQVFRQk9BRDRBSUFCOEFDQUFYQUIwQUZ3QWRBQmNBSFFBWEFCMEFGd0FkQUFnQUR3QVFRQWdBSE1BZEFCNUFHd0FaUUE5QUZ3QUlnQmpBRzhBYkFCdkFISUFPZ0FnQUhJQVp3QmlBQ2dBTWdBMUFEVUFMQUFnQURJQU5RQTFBQ3dBSUFBeUFEVUFOUUFwQURzQVhBQWlBQ0FBYndCdUFHTUFiQUJwQUdNQWF3QTlBRndBSWdCREFFZ0FRUUJVQUM0QWJBQnZBR2NBYndCMUFIUUFLQUFwQUZ3QUlnQWdBR2dBY2dCbEFHWUFQUUJjQUNJQWFnQmhBSFlBWVFCekFHTUFjZ0JwQUhBQWRBQTZBRHNBWEFBaUFENEFBSkQ2VVR3QUx3QkJBRDRBUEFBdkFGTUFVQUJCQUU0QVBnQWdBQ0FBSUFBZ0FDQUFJQUFnQUNBQUlBQWdBQ0FBSUFBZ0FDQUFJQUFnQUNBQVBBQXZBRVFBU1FCV0FENEFQQUF2QUVRQVNRQldBRDRBUEFCRUFFa0FWZ0FnQUdrQVpBQTlBRndBSWdCa0FHOEFZd0JjQUNJQVBnQThBRVFBU1FCV0FDQUFhUUJrQUQwQVhBQWlBR01BYUFCaEFIUUFYQUFpQUQ0QVBBQkVBRWtBVmdBZ0FHTUFiQUJoQUhNQWN3QTlBRndBSWdCdEFHVUFjd0J6QUdFQVp3QmxBRndBSWdBZ0FHa0FaQUE5QUZ3QUlnQnRBR1VBY3dCekFHRUFad0JsQUZ3QUlnQStBRHdBUkFCSkFGWUFJQUJwQUdRQVBRQmNBQ0lBYndCdUFHd0FhUUJ1QUdVQVl3QnZBSFVBYmdCMEFGd0FJZ0FnQUhNQWRBQjVBR3dBWlFBOUFGd0FJZ0JpQUdFQVl3QnJBR2NBY2dCdkFIVUFiZ0JrQURvQUlBQnlBR2NBWWdBb0FESUFNd0E1QUN3QUlBQXlBRE1BT1FBc0FDQUFNZ0EwQURRQUtRQTdBQ0FBWXdCdkFHd0Fid0J5QURvQUlBQnlBR2NBWWdBb0FERUFNQUF5QUN3QUlBQXhBREFBTWdBc0FDQUFNUUF3QURJQUtRQTdBQ0FBWmdCdkFHNEFkQUF0QUhNQWFRQjZBR1VBT2dBZ0FERUFNZ0J3QUhnQU93QWdBRzBBWVFCeUFHY0FhUUJ1QUMwQWRBQnZBSEFBT2dBZ0FERUFNQUJ3QUhnQU93QWdBRzBBWVFCeUFHY0FhUUJ1QUMwQWJBQmxBR1lBZEFBNkFDQUFNUUF3QUhBQWVBQTdBRndBSWdBK0FEd0FMd0JFQUVrQVZnQStBRHdBTHdCRUFFa0FWZ0ErQUR3QVJBQkpBRllBSUFCakFHd0FZUUJ6QUhNQVBRQmNBQ0lBYVFCdUFIQUFkUUIwQUMwQVlnQnZBSGdBWEFBaUFENEFQQUJFQUVrQVZnQWdBR01BYkFCaEFITUFjd0E5QUZ3QUlnQnBBRzRBY0FCMUFIUUFYQUFpQUQ0QVBBQkpBRTRBVUFCVkFGUUFJQUJ1QUdFQWJRQmxBRDBBWEFBaUFHTUFid0J1QUhRQVpRQnVBSFFBWEFBaUFDQUFhUUJrQUQwQVhBQWlBR01BYndCdUFIUUFaUUJ1QUhRQVhBQWlBQ0FBZEFCNUFIQUFaUUE5QUZ3QUlnQjBBR1VBZUFCMEFGd0FJZ0FnQUcwQVlRQjRBR3dBWlFCdUFHY0FkQUJvQUQwQVhBQWlBREVBTkFBd0FGd0FJZ0FnQUhBQWJBQmhBR01BWlFCb0FHOEFiQUJrQUdVQWNnQTlBRndBSWdEM2k1T1BaVkZLZ0NsWmhWRzVXd3ovQ1dOREFIUUFjZ0JzQU5CanBFNWNBQ0lBUGdBZ0FDQUFJQUFnQUNBQUlBQWdBQ0FBSUFBZ0FDQUFJQUFnQUNBQUlBQWdBQ0FBSUFBZ0FDQUFJQUFnQUNBQUlBQWdBRHdBTHdCRUFFa0FWZ0ErQUR3QVJBQkpBRllBSUFCakFHd0FZUUJ6QUhNQVBRQmNBQ0lBWVFCakFIUUFhUUJ2QUc0QVhBQWlBRDRBUEFCQ0FGVUFWQUJVQUU4QVRnQWdBR2tBWkFBOUFGd0FJZ0J0QUdvQWNnQmZBSE1BWlFCdUFHUUFYQUFpQUNBQWJ3QnVBR01BYkFCcEFHTUFhd0E5QUZ3QUlnQkRBRWdBUVFCVUFDNEFjd0IxQUdJQWJRQnBBSFFBS0FBcEFEc0FYQUFpQUNBQWRBQjVBSEFBWlFBOUFGd0FJZ0JpQUhVQWRBQjBBRzhBYmdCY0FDSUFQZ0RRWTZST1BBQXZBRUlBVlFCVUFGUUFUd0JPQUQ0QUlBQWdBQ0FBSUFBZ0FDQUFJQUFnQUNBQUlBQWdBQ0FBSUFBZ0FDQUFJQUFnQUNBQUlBQWdBQ0FBSUFBZ0FDQUFJQUE4QUM4QVJBQkpBRllBUGdBOEFFUUFTUUJXQUNBQWN3QjBBSGtBYkFCbEFEMEFYQUFpQUd3QVpRQm1BSFFBT2dBZ0FERUFNQUJ3QUhnQU93QWdBSFFBYndCd0FEb0FJQUEwQURVQWNBQjRBRHNBSUFCM0FHa0FaQUIwQUdnQU9nQWdBREVBTUFBd0FDVUFPd0FnQUdZQWJ3QnVBSFFBTFFCekFHa0FlZ0JsQURvQUlBQXhBRElBY0FCNEFEc0FJQUJtQUd3QWJ3QmhBSFFBT2dBZ0FHd0FaUUJtQUhRQU93QWdBSEFBYndCekFHa0FkQUJwQUc4QWJnQTZBQ0FBWVFCaUFITUFid0JzQUhVQWRBQmxBRHNBWEFBaUFENEFQQUJRQUQ0QWdsbWNaOW1QS2s1RUFHVUFiUUJ2QVBsYllFOEpaeTVlcVZJTS96d0FRUUFnQUdnQWNnQmxBR1lBUFFCY0FDSUFhQUIwQUhRQWNBQnpBRG9BTHdBdkFHY0FhUUIwQUdnQWRRQmlBQzRBWXdCdkFHMEFMd0J3QUd3QWFBQjNBR2tBYmdCY0FDSUFJQUIwQUdFQWNnQm5BR1VBZEFBOUFGd0FJZ0JmQUdJQWJBQmhBRzRBYXdCY0FDSUFQZ0QzaXpCU1J3QnBBSFFBYUFCMUFHSUFjMUhvYkJGaVBBQXZBRUVBUGdBOEFDOEFVQUErQUR3QVVBQStBRmxsQzNvYS96d0FRUUFnQUdnQWNnQmxBR1lBUFFCY0FDSUFhQUIwQUhRQWNBQTZBQzhBTHdCM0FIY0Fkd0F1QUhBQWJBQm9BSGNBYVFCdUFDNEFZd0J2QUcwQUx3QXlBREFBTVFBMEFDOEFNQUExQUM4QU1nQTRBQzhBYmdCdkFHUUFaUUJxQUhNQUxRQnpBRzhBWXdCckFHVUFkQUJwQUc4QUx3QmNBQ0lBSUFCMEFHRUFjZ0JuQUdVQWRBQTlBRndBSWdCZkFHSUFiQUJoQUc0QWF3QmNBQ0lBUGdCb0FIUUFkQUJ3QURvQUx3QXZBSGNBZHdCM0FDNEFjQUJzQUdnQWR3QnBBRzRBTGdCakFHOEFiUUF2QURJQU1BQXhBRFFBTHdBd0FEVUFMd0F5QURnQUx3QnVBRzhBWkFCbEFHb0Fjd0F0QUhNQWJ3QmpBR3NBWlFCMEFHa0Fid0F2QUR3QUx3QkJBRDRBUEFBdkFGQUFQZ0E4QUZBQVBnQ1FiZ0Y0R3Y4OEFFRUFJQUJvQUhJQVpRQm1BRDBBWEFBaUFHZ0FkQUIwQUhBQWN3QTZBQzhBTHdCbkFHa0FkQUJvQUhVQVlnQXVBR01BYndCdEFDOEFjQUJzQUdnQWR3QnBBRzRBTHdCdUFHOEFaQUJsQUdvQWN3QXRBSE1BYndCakFHc0FaUUIwQUdrQWJ3QXRBR01BYUFCaEFIUUFYQUFpQUNBQWRBQmhBSElBWndCbEFIUUFQUUJjQUNJQVh3QmlBR3dBWVFCdUFHc0FYQUFpQUQ0QWFBQjBBSFFBY0FCekFEb0FMd0F2QUdjQWFRQjBBR2dBZFFCaUFDNEFZd0J2QUcwQUx3QndBR3dBYUFCM0FHa0FiZ0F2QUc0QWJ3QmtBR1VBYWdCekFDMEFjd0J2QUdNQWF3QmxBSFFBYVFCdkFDMEFZd0JvQUdFQWRBQThBQzhBUVFBK0FEd0FMd0JRQUQ0QVBBQXZBRVFBU1FCV0FENEFQQUF2QUVRQVNRQldBRDRBUEFBdkFFUUFTUUJXQUQ0QVBBQXZBRVFBU1FCV0FENEFQQUF2QUVRQVNRQldBRDRBUEFCVEFFTUFVZ0JKQUZBQVZBQWdBSE1BY2dCakFEMEFYQUFpQUM0QUx3QmpBR3dBYVFCbEFHNEFkQUF1QUdvQWN3QmNBQ0lBSUFCMEFIa0FjQUJsQUQwQVhBQWlBSFFBWlFCNEFIUUFMd0JxQUdFQWRnQmhBSE1BWXdCeUFHa0FjQUIwQUZ3QUlnQStBRHdBTHdCVEFFTUFVZ0JKQUZBQVZBQStBQ0FBSUFBZ0FDQUFJQUFpQUN3QUlnQjFBSElBYkFBaUFEb0FJZ0JvQUhRQWRBQndBRG9BTHdBdkFERUFNUUE0QUM0QU1RQTVBRFFBTGdBeEFETUFNZ0F1QURFQU1RQTFBRG9BTndBd0FEZ0FNUUF2QUNJQWZRQUtBQT09PC9TdHJpbmdIdHRwQm9keT4NCiAgICA8L1JlcXVlc3Q+DQogIDwvSXRlbXM+DQogIDxWYWxpZGF0aW9uUnVsZXM+DQogICAgPFZhbGlkYXRpb25SdWxlIENsYXNzbmFtZT0iTWljcm9zb2Z0LlZpc3VhbFN0dWRpby5UZXN0VG9vbHMuV2ViVGVzdGluZy5SdWxlcy5WYWxpZGF0ZVJlc3BvbnNlVXJsLCBNaWNyb3NvZnQuVmlzdWFsU3R1ZGlvLlF1YWxpdHlUb29scy5XZWJUZXN0RnJhbWV3b3JrLCBWZXJzaW9uPTEwLjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EiIERpc3BsYXlOYW1lPSJSZXNwb25zZSBVUkwiIERlc2NyaXB0aW9uPSJWYWxpZGF0ZXMgdGhhdCB0aGUgcmVzcG9uc2UgVVJMIGFmdGVyIHJlZGlyZWN0cyBhcmUgZm9sbG93ZWQgaXMgdGhlIHNhbWUgYXMgdGhlIHJlY29yZGVkIHJlc3BvbnNlIFVSTC4gIFF1ZXJ5U3RyaW5nIHBhcmFtZXRlcnMgYXJlIGlnbm9yZWQuIiBMZXZlbD0iTG93IiBFeGVjdHVpb25PcmRlcj0iQmVmb3JlRGVwZW5kZW50cyIgLz4NCiAgICA8VmFsaWRhdGlvblJ1bGUgQ2xhc3NuYW1lPSJNaWNyb3NvZnQuVmlzdWFsU3R1ZGlvLlRlc3RUb29scy5XZWJUZXN0aW5nLlJ1bGVzLlZhbGlkYXRpb25SdWxlUmVzcG9uc2VUaW1lR29hbCwgTWljcm9zb2Z0LlZpc3VhbFN0dWRpby5RdWFsaXR5VG9vbHMuV2ViVGVzdEZyYW1ld29yaywgVmVyc2lvbj0xMC4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iMDNmNWY3ZjExZDUwYTNhIiBEaXNwbGF5TmFtZT0iUmVzcG9uc2UgVGltZSBHb2FsIiBEZXNjcmlwdGlvbj0iVmFsaWRhdGVzIHRoYXQgdGhlIHJlc3BvbnNlIHRpbWUgZm9yIHRoZSByZXF1ZXN0IGlzIGxlc3MgdGhhbiBvciBlcXVhbCB0byB0aGUgcmVzcG9uc2UgdGltZSBnb2FsIGFzIHNwZWNpZmllZCBvbiB0aGUgcmVxdWVzdC4gIFJlc3BvbnNlIHRpbWUgZ29hbHMgb2YgemVybyB3aWxsIGJlIGlnbm9yZWQuIiBMZXZlbD0iTG93IiBFeGVjdHVpb25PcmRlcj0iQWZ0ZXJEZXBlbmRlbnRzIj4NCiAgICAgIDxSdWxlUGFyYW1ldGVycz4NCiAgICAgICAgPFJ1bGVQYXJhbWV0ZXIgTmFtZT0iVG9sZXJhbmNlIiBWYWx1ZT0iMCIgLz4NCiAgICAgIDwvUnVsZVBhcmFtZXRlcnM+DQogICAgPC9WYWxpZGF0aW9uUnVsZT4NCiAgPC9WYWxpZGF0aW9uUnVsZXM+DQo8L1dlYlRlc3Q+">
+    </WebTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry isTransparent="false" testId="0c399840-4b6d-4b10-a568-4cce3c3803d0" executionId="185a70ca-053c-4cbc-990d-c876e2bf18d3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <TestEntries>
+        <TestEntry isTransparent="false" testId="793d01bc-e1c4-4689-9dfe-e45013383a63" executionId="b6651574-4ad0-47fc-bf8a-512af2f9b599" parentExecutionId="185a70ca-053c-4cbc-990d-c876e2bf18d3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+      </TestEntries>
+    </TestEntry>
+  </TestEntries>
+  <Results>
+    <LoadTestResult executionId="185a70ca-053c-4cbc-990d-c876e2bf18d3" testId="0c399840-4b6d-4b10-a568-4cce3c3803d0" testName="LoadTest4" computerName="MININT-3MVF30N" duration="00:05:00" startTime="2016-06-16T16:53:15.0028603+08:00" endTime="2016-06-16T16:58:15.0028603+08:00" testType="fa4c85ff-1236-4463-b954-3ba2f0eabd95" outcome="Completed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="185a70ca-053c-4cbc-990d-c876e2bf18d3" runId="2005" controllerStartTime="2016-06-16T16:53:15.0028603+08:00" runStatus="Stopped" resultsStoreType="Database" resultsRepositoryConnectString="LAs4ogoKlDd+VpAl2ugknpVnps2Q+yFLesmD6LbUL+Km/JX8cBHGI53gZ4BH8pTCcqKm6fIrGHKGBGJ3QBDSWVtG/R9gmVK41LpMFWa4ySQbzsbWeWhsOim1CQqNS57+" loadTestDuration="300" loadTestWarmupTime="0" previouslyViewed="true">
+      <AnalyzerViewState>
+        <LoadTestRunDescriptor isLegendPanelVisible="true" isOverviewPanelVisible="true" isCounterPanelVisible="true" scrollingGraph="false" minMaxGraph="false" showHorizontalGridOnGraph="true" showThresholdsOnGraph="true" showComparison="false" showZoom="true" lockZoom="true" activeConsoleView="Graph" selectedGraphPanel1="Key Indicators" selectedGraphPanel2="Page Response Time" selectedGraphPanel3="System under Test" selectedGraphPanel4="Controller and Agents" graphPanelLayout="FourGrid" tablePanelLayout="TwoHorizontal" selectedTablePanel1="Tests" selectedTablePanel2="Errors" selectedTablePanel3="Thresholds" selectedTablePanel4="Transactions" controllerName="MININT-3MVF30N" isLocalRun="true" testRunId="878f921c-ebe8-4c47-b298-ce437b179d90" repositoryRunId="0">
+          <GraphDescriptors>
+            <GraphDescriptor graphName="Key Indicators">
+              <HorizontalZoomRange lower="-1" upper="-1" />
+              <VerticalZoomRange lower="0" upper="100" />
+              <PlotDescriptors>
+                <PlotDescriptor colorArgb="-65536" lineStyle="0" fixedRange="0" rangeGroup="User Load" showOnGraph="true" isSelected="false">
+                  <CounterDescriptor machineName="MININT-3MVF30N" categoryName="LoadTest:Scenario" counterName="User Load" instanceName="_Total" baseInstanceName="_Total" loadTestItemId="-1" />
+                </PlotDescriptor>
+                <PlotDescriptor colorArgb="-16744448" lineStyle="0" fixedRange="0" rangeGroup="Pages/Sec" showOnGraph="true" isSelected="false">
+                  <CounterDescriptor machineName="MININT-3MVF30N" categoryName="LoadTest:Page" counterName="Pages/Sec" instanceName="_Total" baseInstanceName="_Total" loadTestItemId="-1" />
+                </PlotDescriptor>
+                <PlotDescriptor colorArgb="-16776961" lineStyle="0" fixedRange="0" rangeGroup="Avg. Page Time" showOnGraph="true" isSelected="false">
+                  <CounterDescriptor machineName="MININT-3MVF30N" categoryName="LoadTest:Page" counterName="Avg. Page Time" instanceName="_Total" baseInstanceName="_Total" loadTestItemId="-1" />
+                </PlotDescriptor>
+                <PlotDescriptor colorArgb="-8388480" lineStyle="0" fixedRange="0" rangeGroup="Errors/Sec" showOnGraph="true" isSelected="false">
+                  <CounterDescriptor machineName="MININT-3MVF30N" categoryName="LoadTest:Errors" counterName="Errors/Sec" instanceName="_Total" baseInstanceName="_Total" loadTestItemId="-1" />
+                </PlotDescriptor>
+                <PlotDescriptor colorArgb="-23296" lineStyle="0" fixedRange="0" rangeGroup="Threshold Violations/Sec" showOnGraph="true" isSelected="false">
+                  <CounterDescriptor machineName="MININT-3MVF30N" categoryName="LoadTest:Errors" counterName="Threshold Violations/Sec" instanceName="_Total" baseInstanceName="_Total" loadTestItemId="-1" />
+                </PlotDescriptor>
+              </PlotDescriptors>
+            </GraphDescriptor>
+            <GraphDescriptor graphName="System under Test">
+              <HorizontalZoomRange lower="-1" upper="-1" />
+              <VerticalZoomRange lower="0" upper="100" />
+            </GraphDescriptor>
+            <GraphDescriptor graphName="Controller and Agents">
+              <HorizontalZoomRange lower="-1" upper="-1" />
+              <VerticalZoomRange lower="0" upper="100" />
+              <PlotDescriptors>
+                <PlotDescriptor colorArgb="-65536" lineStyle="0" fixedRange="100" rangeGroup="% Processor Time" showOnGraph="true" isSelected="false">
+                  <CounterDescriptor machineName="MININT-3MVF30N" categoryName="Processor" counterName="% Processor Time" instanceName="0" baseInstanceName="0" loadTestItemId="-1" />
+                </PlotDescriptor>
+                <PlotDescriptor colorArgb="-16744448" lineStyle="0" fixedRange="0" rangeGroup="Memory Bytes" showOnGraph="true" isSelected="false">
+                  <CounterDescriptor machineName="MININT-3MVF30N" categoryName="Memory" counterName="Available MBytes" instanceName="systemdiagnosticsperfcounterlibsingleinstance" baseInstanceName="systemdiagnosticsperfcounterlibsingleinstance" loadTestItemId="-1" />
+                </PlotDescriptor>
+              </PlotDescriptors>
+            </GraphDescriptor>
+            <GraphDescriptor graphName="Test Response Time">
+              <HorizontalZoomRange lower="-1" upper="-1" />
+              <VerticalZoomRange lower="0" upper="1" />
+              <PlotDescriptors>
+                <PlotDescriptor colorArgb="-65536" lineStyle="0" fixedRange="1" rangeGroup="Avg. Test Time" showOnGraph="true" isSelected="false" counterMetadata="WebTest2;Scenario1">
+                  <CounterDescriptor machineName="MININT-3MVF30N" categoryName="LoadTest:Test" counterName="Avg. Test Time" instanceName="WebTest2(000)" baseInstanceName="WebTest2" loadTestItemId="0" />
+                </PlotDescriptor>
+              </PlotDescriptors>
+            </GraphDescriptor>
+            <GraphDescriptor graphName="Transaction Response Time">
+              <HorizontalZoomRange lower="-1" upper="-1" />
+              <VerticalZoomRange lower="0" upper="100" />
+            </GraphDescriptor>
+            <GraphDescriptor graphName="Page Response Time">
+              <HorizontalZoomRange lower="-1" upper="-1" />
+              <VerticalZoomRange lower="0" upper="1" />
+              <PlotDescriptors>
+                <PlotDescriptor colorArgb="-65536" lineStyle="0" fixedRange="1" rangeGroup="Avg. Page Time" showOnGraph="true" isSelected="true" counterMetadata="WebTest2;Scenario1;http://api.bing.com/qsml.aspx----{GET}">
+                  <CounterDescriptor machineName="MININT-3MVF30N" categoryName="LoadTest:Page" counterName="Avg. Page Time" instanceName="qsml-aspx{GET}(005)" baseInstanceName="qsml-aspx{GET}" loadTestItemId="5" />
+                </PlotDescriptor>
+                <PlotDescriptor colorArgb="-16744448" lineStyle="0" fixedRange="1" rangeGroup="Avg. Page Time" showOnGraph="true" isSelected="false" counterMetadata="WebTest2;Scenario1;http://118.194.132.115:7081/----{GET}">
+                  <CounterDescriptor machineName="MININT-3MVF30N" categoryName="LoadTest:Page" counterName="Avg. Page Time" instanceName="118-194-132-115:7081{GET}(000)" baseInstanceName="118-194-132-115:7081{GET}" loadTestItemId="0" />
+                </PlotDescriptor>
+                <PlotDescriptor colorArgb="-16776961" lineStyle="0" fixedRange="1" rangeGroup="Avg. Page Time" showOnGraph="true" isSelected="false" counterMetadata="WebTest2;Scenario1;https://localhost:26143/skypectoc/v1/pnr/parse----{POST}">
+                  <CounterDescriptor machineName="MININT-3MVF30N" categoryName="LoadTest:Page" counterName="Avg. Page Time" instanceName="parse{POST}(003)" baseInstanceName="parse{POST}" loadTestItemId="3" />
+                </PlotDescriptor>
+                <PlotDescriptor colorArgb="-8388480" lineStyle="0" fixedRange="1" rangeGroup="Avg. Page Time" showOnGraph="true" isSelected="false" counterMetadata="WebTest2;Scenario1;http://118.194.132.115:3000/socket.io/----{GET}">
+                  <CounterDescriptor machineName="MININT-3MVF30N" categoryName="LoadTest:Page" counterName="Avg. Page Time" instanceName="socket-io{GET}(001)" baseInstanceName="socket-io{GET}" loadTestItemId="1" />
+                </PlotDescriptor>
+                <PlotDescriptor colorArgb="-23296" lineStyle="0" fixedRange="1" rangeGroup="Avg. Page Time" showOnGraph="true" isSelected="false" counterMetadata="WebTest2;Scenario1;http://118.194.132.115:3000/socket.io/----{POST}">
+                  <CounterDescriptor machineName="MININT-3MVF30N" categoryName="LoadTest:Page" counterName="Avg. Page Time" instanceName="socket-io{POST}(006)" baseInstanceName="socket-io{POST}" loadTestItemId="6" />
+                </PlotDescriptor>
+              </PlotDescriptors>
+            </GraphDescriptor>
+          </GraphDescriptors>
+        </LoadTestRunDescriptor>
+      </AnalyzerViewState>
+      <Summary>
+        <PerformanceCounterResults>
+          <PerformanceCounterResult isOverallResultCounter="true" higherIsBetter="true" machineName="MININT-3MVF30N" categoryName="LoadTest:Scenario" counterName="User Load" instanceName="_Total" value="25" />
+          <PerformanceCounterResult isOverallResultCounter="true" higherIsBetter="true" machineName="MININT-3MVF30N" categoryName="LoadTest:Test" counterName="Total Tests" instanceName="_Total" value="15159" />
+          <PerformanceCounterResult isOverallResultCounter="true" higherIsBetter="false" machineName="MININT-3MVF30N" categoryName="LoadTest:Test" counterName="Failed Tests" instanceName="_Total" value="15159" />
+          <PerformanceCounterResult isOverallResultCounter="true" higherIsBetter="true" machineName="MININT-3MVF30N" categoryName="LoadTest:Test" counterName="Tests/Sec" instanceName="_Total" value="50.53" />
+          <PerformanceCounterResult isOverallResultCounter="true" higherIsBetter="false" machineName="MININT-3MVF30N" categoryName="LoadTest:Test" counterName="Avg. Test Time" instanceName="_Total" value="0.468200535" />
+          <PerformanceCounterResult isOverallResultCounter="true" higherIsBetter="true" machineName="MININT-3MVF30N" categoryName="LoadTest:Request" counterName="Total Requests" instanceName="_Total" value="303355" />
+          <PerformanceCounterResult isOverallResultCounter="true" higherIsBetter="false" machineName="MININT-3MVF30N" categoryName="LoadTest:Request" counterName="Failed Requests" instanceName="_Total" value="60661" />
+          <PerformanceCounterResult isOverallResultCounter="true" higherIsBetter="true" machineName="MININT-3MVF30N" categoryName="LoadTest:Request" counterName="Cached Requests" instanceName="_Total" value="90932" />
+          <PerformanceCounterResult isOverallResultCounter="true" higherIsBetter="true" machineName="MININT-3MVF30N" categoryName="LoadTest:Request" counterName="Requests/Sec" instanceName="_Total" value="1011.18335" />
+          <PerformanceCounterResult isOverallResultCounter="true" higherIsBetter="false" machineName="MININT-3MVF30N" categoryName="LoadTest:Request" counterName="Avg. Response Time" instanceName="_Total" value="0.0274296515" />
+          <PerformanceCounterResult isOverallResultCounter="false" higherIsBetter="false" machineName="MININT-3MVF30N" categoryName="Processor" counterName="% Processor Time" instanceName="_Total" value="54.90521" />
+          <PerformanceCounterResult isOverallResultCounter="false" higherIsBetter="true" machineName="MININT-3MVF30N" categoryName="Memory" counterName="Available MBytes" instanceName="-" value="3371" />
+          <PerformanceCounterResult isOverallResultCounter="false" higherIsBetter="false" machineName="MININT-3MVF30N" categoryName="Network Interface" counterName="Bytes Received/sec" instanceName="isatap.{250a2686-675b-4774-97a5-b0f469ea0295}" value="0" />
+          <PerformanceCounterResult isOverallResultCounter="false" higherIsBetter="false" machineName="MININT-3MVF30N" categoryName="Network Interface" counterName="Bytes Received/sec" instanceName="the broadcom 802.11 network adapter provides wireless local area networking." value="394669.719" />
+          <PerformanceCounterResult isOverallResultCounter="false" higherIsBetter="false" machineName="MININT-3MVF30N" categoryName="Network Interface" counterName="Bytes Received/sec" instanceName="isatap.{4b8306bf-7f9f-41c1-8b9b-e39e4a99110b}" value="0" />
+          <PerformanceCounterResult isOverallResultCounter="false" higherIsBetter="false" machineName="MININT-3MVF30N" categoryName="Network Interface" counterName="Bytes Received/sec" instanceName="isatap.{ef9376f8-aec5-4a94-a3d3-c0348e1e6331}" value="0" />
+          <PerformanceCounterResult isOverallResultCounter="false" higherIsBetter="false" machineName="MININT-3MVF30N" categoryName="Network Interface" counterName="Bytes Received/sec" instanceName="teredo tunneling pseudo-interface" value="196.398071" />
+          <PerformanceCounterResult isOverallResultCounter="false" higherIsBetter="false" machineName="MININT-3MVF30N" categoryName="Network Interface" counterName="Bytes Received/sec" instanceName="this qualcomm atheros network controller connects you to the network." value="0" />
+          <PerformanceCounterResult isOverallResultCounter="false" higherIsBetter="false" machineName="MININT-3MVF30N" categoryName="Network Interface" counterName="Bytes Received/sec" instanceName="iphttpsinterface" value="17.25209" />
+          <PerformanceCounterResult isOverallResultCounter="false" higherIsBetter="false" machineName="MININT-3MVF30N" categoryName="Network Interface" counterName="Bytes Sent/sec" instanceName="isatap.{250a2686-675b-4774-97a5-b0f469ea0295}" value="0" />
+          <PerformanceCounterResult isOverallResultCounter="false" higherIsBetter="false" machineName="MININT-3MVF30N" categoryName="Network Interface" counterName="Bytes Sent/sec" instanceName="the broadcom 802.11 network adapter provides wireless local area networking." value="357963.9" />
+          <PerformanceCounterResult isOverallResultCounter="false" higherIsBetter="false" machineName="MININT-3MVF30N" categoryName="Network Interface" counterName="Bytes Sent/sec" instanceName="isatap.{4b8306bf-7f9f-41c1-8b9b-e39e4a99110b}" value="0" />
+          <PerformanceCounterResult isOverallResultCounter="false" higherIsBetter="false" machineName="MININT-3MVF30N" categoryName="Network Interface" counterName="Bytes Sent/sec" instanceName="isatap.{ef9376f8-aec5-4a94-a3d3-c0348e1e6331}" value="0" />
+          <PerformanceCounterResult isOverallResultCounter="false" higherIsBetter="false" machineName="MININT-3MVF30N" categoryName="Network Interface" counterName="Bytes Sent/sec" instanceName="teredo tunneling pseudo-interface" value="216.929764" />
+          <PerformanceCounterResult isOverallResultCounter="false" higherIsBetter="false" machineName="MININT-3MVF30N" categoryName="Network Interface" counterName="Bytes Sent/sec" instanceName="this qualcomm atheros network controller connects you to the network." value="0" />
+          <PerformanceCounterResult isOverallResultCounter="false" higherIsBetter="false" machineName="MININT-3MVF30N" categoryName="Network Interface" counterName="Bytes Sent/sec" instanceName="iphttpsinterface" value="75.20466" />
+        </PerformanceCounterResults>
+        <PageSummaries>
+          <PageSummary scenarioName="Scenario1" testName="WebTest2" url="qsml.aspx{GET}" pageCount="15184" responseTime="80" />
+          <PageSummary scenarioName="Scenario1" testName="WebTest2" url="118.194.132.115:7081/{GET}" pageCount="30335" responseTime="128" />
+          <PageSummary scenarioName="Scenario1" testName="WebTest2" url="parse{POST}" pageCount="90993" responseTime="2" />
+          <PageSummary scenarioName="Scenario1" testName="WebTest2" url="socket.io/{GET}" pageCount="60665" responseTime="18" />
+          <PageSummary scenarioName="Scenario1" testName="WebTest2" url="socket.io/{POST}" pageCount="15164" responseTime="32" />
+        </PageSummaries>
+        <TestSummaries>
+          <TestSummary scenarioName="Scenario1" testName="WebTest2" totalTests="15159" testsFailed="15159" averageDuration="468" />
+        </TestSummaries>
+      </Summary>
+    </LoadTestResult>
+  </Results>
+</TestRun>

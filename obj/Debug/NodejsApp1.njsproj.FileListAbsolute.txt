@@ -1,1 +1,2 @@
 D:\KnowledgeCenter\SourceCode\nodejs-socketio-chat\bin\Microsoft.NodejsTools.WebRole.dll
+D:\KnowledgeCenter\SourceCode\nodejs-socketio-chat\obj\Debug\NodejsApp1.njsprojResolveAssemblyReference.cache
